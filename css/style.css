@@ -355,7 +355,7 @@ footer{
 .sidemenubar{
   position: fixed; top:50%; right:0; margin-top: -135px;   }
 .sideb{text-align: center;}
-.sideb>li{ border-bottom: 1px solid rgba(204,204,204,0.8); }
+.sideb>li{ border-bottom: 1px dotted rgba(0, 0, 0, 0.5); }
 
 
 .sidemenubar i{font-size: 30px; color: rgba(156,235,252); padding-bottom: 5px;}
