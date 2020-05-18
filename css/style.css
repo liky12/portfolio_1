@@ -214,7 +214,9 @@ section{position: relative; top:840px;}
 .pdimgbox:after{
   content: ""; position: absolute; top:0; left:0; right:0; bottom:0;}
 .pdimgbox:hover:after{background: rgba(255,255,255,0.7); transition: all 0.8s;}
-.pdimgbox:hover img{transform: scale(1.2);   transition: all 0.8s;}
+.pdimg li:nth-child(even) .pdimgbox:hover img{transform: scale(1.2) rotate(10deg);  transition: all 0.8s;}
+.pdimg li:nth-child(odd) .pdimgbox:hover img{transform: scale(1.2) rotate(-10deg);  transition: all 0.8s;}
+
 .pdtext{
   position: absolute; top:50%; left:50%; 
   transform: translate(-50%,-50%);
