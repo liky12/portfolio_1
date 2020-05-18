@@ -185,9 +185,10 @@ body{}
   font-size: 17px; 
   background: darkseagreen;
   border-bottom: 1px solid slategrey;}
+.sm li:last-child a{border-bottom: none;}
 .sm li:first-child a{
   padding-bottom: 27px; 
-  background: sandybrown;border-bottom: none;
+  background: sandybrown;border-bottom: 1px solid slategrey;
   height: 120px;}
 .sm li:first-child:after{
   content:">"; display: inline-block; font-size: 10px; 
