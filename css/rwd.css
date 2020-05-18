@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+@media screen and (max-width:1500px){
+    
+    .depth1>li{font-size:16px; }
+    .depth1>li>a{width:75px;}
+    .smenu{left:68%;}
+    .pdimg {width: 80%;}
+    .sdlign{width: 500px;}
+
+}
+
+
+
+
+
+@media screen and (max-width:1050px){
+    
+    #header .logo a{font-size: 25px; margin-left: 0px;}
+    #header nav{left:70%; width: 65%;}
+    .depth1>li{font-size:15px; font-weight: bold; }
+    .depth1>li>a{ width:75px;}
+    .snsicon{display: none;}
+    .pdimg {width: 95%;}
+
+    .sdgimg .text{margin-left: -35px;} 
+    .text h3{font-size:30px; }
+    .text p{font-size: 16px; padding-top: 40px;}
+    .sdlign{width: 500px;}
+
+    .smenu{left:75%;}
+
+    .product h3{font-size: 22px; padding: 170px 0 50px; }
+    .product2{ width:95%; margin: 0 auto;}
+    .product2 .pd2text{width: 135px; }
+    .pdimg {margin-bottom: 70px; } 
+
+    .linebg{margin-bottom: 70px;height: 300px; background-attachment:scroll; background-position: 90% 80%;}
+    .linetext h3{font-size: 22px; font-weight: bold;}
+    .linetext p{font-size: 16px;}
+
+    .pd2bg{margin-bottom: 30px;}
+    .product2 h3{font-size: 22px; padding:10px 0 50px}}
+
+    .tab {width: 90%; margin: 0 auto; padding-top: 70px;}
+    .tabmenu>li{font-size: 16px; }
+    .bodo .date{font-size: 13px; font-weight: normal;color: gray;}
+    .bodo p{font-size: 15px;}
+
+
+    .foot{ font-size: 13px;}
+    .add p, .cl p{font-size: 12px;} 
+    .logoname{font-size: 20px; }
+
+    /* .sidemenubar{display: none;} */
+
+}
+
+@media screen and (max-width:799px){
+
+    .sdlign{width: 250px;}
+}
+
