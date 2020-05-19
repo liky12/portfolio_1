@@ -12,8 +12,6 @@
 
 
 
-
-
 @media screen and (max-width:1050px){
     
     #header .logo a{font-size: 25px; margin-left: 0px;}
@@ -23,12 +21,56 @@
     .snsicon{display: none;}
     .pdimg {width: 95%;}
 
-    .sdgimg .text{margin-left: -35px;} 
+
+    .sdgimg .sd1{
+        width: 100%; height:963px;
+        background-image:url(../img/back1.jpg) ;
+        background-repeat: no-repeat; background-size: cover;
+        background-position: center;position: relative; }
+    .sdgimg .sd2{
+        width: 100%; height:600px;
+        background-image:url(../img/back2.jpg) ;
+        background-repeat: no-repeat; background-size: cover;
+        background-position: 50% 70%;position: relative; }
+    .sdgimg .sd3{
+        width: 100%; height:936px;
+        background-image:url(../img/baclk3.jpg) ;
+        background-repeat: no-repeat; background-size: cover;
+        background-position: 50% 35%;position: relative; }
+    .sdgimg .text{margin:0 20px 0 -20px ; top:20%;} 
     .text h3{font-size:30px; }
     .text p{font-size: 16px; padding-top: 40px;}
-    .sdlign{width: 500px;}
+    .sdlign{width: 200px;}
 
-    .smenu{left:75%;}
+    .smenu{
+        top:-150px;left:10%; width: 300px; margin-left: -20px;
+        box-shadow: 1px 1px 1px rgba(58,42,25,0.5);}
+    .sm li{  float: left; width: 25%; height:70px; display: inline-block;}
+        .sm li:first-child{height: 70px; margin-top: 11px;}
+        .sm li a{
+            display:inline-block; 
+            width: 70px; height: 70px; line-height: 70px; padding-left: 0px;
+            font-size: 12px; 
+            background: darkseagreen;
+            border-bottom: 1px solid slategrey; text-align: center;}
+        .sm li:first-child a{
+            padding-top: 0px; line-height: 1.5;
+            background: sandybrown;border-bottom: 1px solid slategrey;
+            height: 70px;}
+        .sm li:first-child:after{
+            content:">"; display: none; font-size: 10px; 
+            position: relative; top:-4px;left: -20px ;}
+        .sm li+li:after,
+        .sm li+li+li:after,
+        .sm li+li+li+li:after
+        {content:">"; display: none;
+            font-size: 10px; 
+            position: relative; 
+            top:-103%; left:126px ;}
+        .sm li:hover{opacity: 0.7; transition: all 0.5s;}
+              
+            
+      
 
     .product h3{font-size: 22px; padding: 170px 0 50px; }
     .product2{ width:95%; margin: 0 auto;}
@@ -56,8 +98,19 @@
 
 }
 
-@media screen and (max-width:799px){
+@media screen and (max-width:799px) {
 
-    .sdlign{width: 250px;}
+    #header .logo a{font-size: 25px; margin-left: 0px;}
+
+
+    .linetext h3{font-size: 22px; font-weight: bold;}
+    .linetext p{font-size: 10px;}    
+    .sdgimg .text{margin-left: -35px;}
+
+    .sm li{float:left }
+
+
+  
+
 }
 

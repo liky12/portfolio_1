@@ -53,6 +53,8 @@ body{}
 
 .row{max-width:1550px; margin:0 auto;}
 
+.openMOgnb,.closeMOgnb {display: none;}
+
 #wrap{position: relative;}
 #header { 
   position: absolute; top:0; left: 0;
@@ -145,20 +147,20 @@ body{}
 
 .sdgimg {color: papayawhip;}
 .sdgimg .sd1{
-  width: 100%; height:963px; position: absolute; top:0; left:0; 
+  width: 100%; height:963px;
   background-image:url(../img/back1.jpg) ;
   background-repeat: no-repeat; background-size: cover;
-  background-position: center; }
+  background-position: center;position: relative; }
 .sdgimg .sd2{
-  width: 100%; height:936px; position: absolute; top:0; left:0; 
+  width: 100%; height:936px;
   background-image:url(../img/back2.jpg) ;
   background-repeat: no-repeat; background-size: cover;
-  background-position: 50% 70%;}
+  background-position: 50% 70%;position: relative; }
 .sdgimg .sd3{
-    width: 100%; height:936px; position: absolute; top:0; left:0; 
+    width: 100%; height:936px;
     background-image:url(../img/baclk3.jpg) ;
     background-repeat: no-repeat; background-size: cover;
-    background-position: 50% 35%;}
+    background-position: 50% 35%;position: relative; }
 .sd1, .sd3 {display: none;}
 .sdgimg .text{position: absolute; top:33%; left: 10%; margin-left: 20px;} 
 .text h3{font-size:65px; letter-spacing: 2px; line-height: 1.3; }
@@ -168,13 +170,13 @@ body{}
 
 
 
-.smenu{
-  position: absolute; top:460px; left:81.5%; transform: translateY(-50%);
+.smenu{ position: relative;
+  top:-470px ;left:81.5%; transform: translateY(-50%);
   width: 150px; 
   text-align: left; font-weight: bold; 
   box-shadow: 5px 5px 5px rgba(58,42,25,0.5);
 }
-.sm li{  
+.sm li{  float: left; width: 100%;
   height:90px; line-height:90px;}
 .sm li:first-child{
   height: 120px; line-height:1.8;
