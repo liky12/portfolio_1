@@ -51,7 +51,7 @@ fieldset{border: none;;}
 body{}
 
 
-.row{max-width:1550px; margin:0 auto;}
+
 
 .openMOgnb,.closeMOgnb {display: none;}
 
@@ -69,7 +69,7 @@ body{}
     width:250px; height:41px; line-height: 41px;
     text-align: center; font-size: 30px;
     background-color: transparent;
-    position: absolute; top:50%; 
+    position: absolute; top:50%; left: 10%; 
     transform: translateY(-50%);
     font-family: 'Concert One', cursive;
     text-shadow: 5px 5px 3px rgba(0,0,0,0.2);
@@ -122,7 +122,7 @@ body{}
 
 
 
-.snsicon {float:right; padding-top: 40px; margin-right: 20px;}
+.snsicon {position: absolute; top:50%; right:10%; transform: translateY(-50%);}
 .snsicon li{display: inline-block; padding-left:20px;font-size:25px; 
   text-shadow: 5px 5px 3px rgba(0,0,0,0.2); 
   font-family:'Font Awesome 5 Brands'; font-weight:400 !important}
@@ -145,54 +145,64 @@ body{}
 
 
 
-.sdgimg {color: papayawhip;}
+
+
+/* section 시작 */
+
+.sdgimg { }
 .sdgimg .sd1{
   width: 100%; height:963px;
   background-image:url(../img/back1.jpg) ;
   background-repeat: no-repeat; background-size: cover;
-  background-position: center;position: relative; }
+  background-position: center;
+  position: relative; }
 .sdgimg .sd2{
   width: 100%; height:936px;
   background-image:url(../img/back2.jpg) ;
   background-repeat: no-repeat; background-size: cover;
-  background-position: 50% 70%;position: relative; }
+  background-position: 50% 70%;
+  position: relative; }
 .sdgimg .sd3{
     width: 100%; height:936px;
     background-image:url(../img/baclk3.jpg) ;
     background-repeat: no-repeat; background-size: cover;
-    background-position: 50% 35%;position: relative; }
+    background-position: 50% 35%;
+    position: relative; }
 .sd1, .sd3 {display: none;}
-.sdgimg .text{position: absolute; top:33%; left: 10%; margin-left: 20px;} 
+.sdgimg .text{
+  position: absolute; 
+  top:33%; left: 10%; 
+  color: papayawhip;} 
 .text h3{font-size:65px; letter-spacing: 2px; line-height: 1.3; }
 .text p{font-size: 16px; padding-top: 40px;}
-.sdlign{background: papayawhip; width :180%; height: 1px; display: inline-block; margin-top: 40px;}
+.sdlign{background: papayawhip; width :900px; height: 1px; display: inline-block; margin-top: 40px;}
 
 
 
-
-.smenu{ position: relative;
-  top:-470px ;left:81.5%; transform: translateY(-50%);
+.sdmenu{ 
+  position: absolute;
+  top:270px ;right:10%;
   width: 150px; 
   text-align: left; font-weight: bold; 
   box-shadow: 5px 5px 5px rgba(58,42,25,0.5);
-}
-.sm li{  float: left; width: 100%;
-  height:90px; line-height:90px;}
+  color: papayawhip;}
+.sm li{  float: left; width: 100%; height:70px ; text-align:left; line-height:70px ;  
+   background: darkseagreen;
+  }
 .sm li:first-child{
-  height: 120px; line-height:1.8;
+  height: 120px; line-height:1.2;
+  padding-top: 50px;
+  background: sandybrown;
   white-space:pre; }
 .sm li a{
-  display:inline-block; 
-  width: 150px; height: 90px; padding-left: 20px;
-  font-size: 17px; 
-  background: darkseagreen;
+  display:block; 
+ padding-left: 20px; */
+ font-size: 17px; 
   border-bottom: 1px solid slategrey;}
-.sm li:last-child a{border-bottom: none;}
 .sm li:first-child a{
-  padding-bottom: 27px; 
-  background: sandybrown;border-bottom: 1px solid slategrey;
-  height: 120px;}
-.sm li:first-child:after{
+  border-bottom: 1px solid slategrey;}
+  .sm li:last-child a{border-bottom: none;}
+/* .sm li:first-child:after{
   content:">"; display: inline-block; font-size: 10px; 
   position: relative; top:-4px;left: -20px ;}
 .sm li+li:after,
@@ -201,15 +211,14 @@ body{}
 {content:">"; display: inline-block; 
   font-size: 10px; 
   position: relative; 
-  top:-103%; left:126px ;}
+  top:-103%; left:126px ;} */
 .sm li:hover{opacity: 0.7; transition: all 0.5s;}
 
 
-
-section{position: relative; top:840px;}
-#product h3{text-align: center; padding: 230px 0 50px; font-size: 30px;}
-.pdimg {width: 65%;height:250px; 
-  margin-bottom: 180px; border: none;} 
+#product{position: relative; height:px;padding-bottom: 180px; }
+#product h4{
+   font-size: 30px; text-align: center; padding: 150px 0 50px;  }
+.pdimg {margin: 0 auto; width:80%;height:250px; } 
 .pdimg li{float: left; width: 20%; overflow: hidden; }
 .pdimg img{width:100%;}
 .pdimgbox{position: relative;}
@@ -218,10 +227,10 @@ section{position: relative; top:840px;}
 .pdimgbox:hover:after{background: rgba(255,255,255,0.7); transition: all 0.8s;}
 .pdimg li:nth-child(even) .pdimgbox:hover img{transform: scale(1.2) rotate(10deg);  transition: all 0.8s;}
 .pdimg li:nth-child(odd) .pdimgbox:hover img{transform: scale(1.2) rotate(-10deg);  transition: all 0.8s;}
-
 .pdtext{
   position: absolute; top:50%; left:50%; 
   transform: translate(-50%,-50%);
+  font-size: 20px;
   text-align: center; line-height: 1.5;
   opacity: 0; z-index: 999999;}
 .pdimgbox:hover .pdtext{opacity: 1;  transition: all 0.5s 0.1s;}
@@ -234,21 +243,19 @@ section{position: relative; top:840px;}
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
-  position: relative; margin-bottom: 130px;}
-.linetext{position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);}
+  position: relative; margin:100px 0 130px;}
+.linetext{position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
 .linetext h3{font-size: 40px;}
 .linetext p{font-size: 18px;}
 .linetext h3:nth-of-type(2){padding-bottom: 20px;}
 
 
-.pd2bg{
-  /* background: rgba(246,246,246); */
-  height: 700px;  margin-bottom: 50px;}
-.product2{ width: 56.5%; margin: 0 auto; }
+/* .pd2bg{margin-bottom: 50px;} */
+.product2{ width: 56.5%; margin: 0 auto; margin-bottom: 50px;}
 .product2 li{float: left; width: 48%; text-align: center;}
 .product2 li{padding-left: 20px;}
 .product2 .pd2box{ 
-  width: ; margin-bottom: 20px; 
+  margin-bottom: 20px; 
   position: relative; overflow: hidden;}
 .product2 h3{text-align: center; font-size: 30px; padding:35px 0 50px}
 .product2 .pd2tbg{
@@ -284,66 +291,68 @@ section{position: relative; top:840px;}
 .tabbg{background: rgba(246,246,246);height: 550px;}
 .tab {max-width: 55%; margin: 0 auto; padding-top: 70px;}
 .tabmenu{position: relative;}
-.tabmenu>li{float: left; width: 32%; height: 45px; line-height: 45px;
+.tabmenu>li{
+  float: left; width: 32%; height: 45px; line-height: 45px;
   text-align:center; margin-left:2%;
   background:none; 
-  color: #000; font-size: 18px; font-weight: bold; border: 1px solid gray;}
+  color: #000; font-size: 18px; font-weight: bold; 
+  border: 1px solid gray;}
 .tabmenu li:first-child{margin-left: 0;}
 .tabmenu a{display: block;}
-/* .tabmenu>li>a:hover,
-.tabmenu > li>.active>a:hover{ background: sandybrown;} */
 .tabmenu > li > div {display: none; position: absolute; left:0; height: 400px; color: #000; 
   width: 100%; }
 .tabmenu > li.active div{display: block;}
 .tabmenu > li.active{background: darkseagreen; border: none; color: #fff;}
 
 
-.bodo{padding: 15px 0px ;}
-.bodo li{
-  float: left;width: 48%; text-align: left; font-size: 19px; 
-  line-height: 1.2; padding: 20px 0; font-weight: normal;
-  border-bottom: 1px solid gray; }
-.bodo li:nth-child(odd){margin-right: 4%;}
-.bodo .date{font-size: 13px; font-weight: normal;color: gray;}
-.bodo p{  
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;}
-.bodo a:hover p{text-decoration: underline;}
+        .bodo{padding: 15px 0px ;}
+        .bodo li{
+          float: left;width: 48%; text-align: left; font-size: 19px; 
+          line-height: 1.2; padding: 20px 0; font-weight: normal;
+          border-bottom: 1px solid gray; }
+        .bodo li:nth-child(odd){margin-right: 4%;}
+        .bodo .date{font-size: 13px; font-weight: normal;color: gray;}
+        .bodo p{  
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;}
+        .bodo a:hover p{text-decoration: underline;}
 
 
-.notice li{float: left; width: 33.33%;
-  display: block;}
-.notice a{display: inline-block; text-align: center;}
-.notice a:hover{text-decoration: underline;}
-.notice p{
-  text-align: center;
-  width: 365px; height: 80px; padding: 35px 20px 0;
-  overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
-.notice .ndate{display: block; font-size: 13px; height: 15x; line-height: 1.1; padding-bottom: 30px;}
-.notice img{height: 220px;}
+        .notice li{float: left; width: 33.33%;
+          display: block;}
+        .notice a{display: inline-block; text-align: center;}
+        .notice a:hover{text-decoration: underline;}
+        .notice p{
+          text-align: center;
+          width: 365px; height: 80px; padding: 35px 20px 0;
+          overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+        .notice .ndate{display: block; font-size: 13px; height: 15x; line-height: 1.1; padding-bottom: 30px;}
+        .notice img{height: 220px;}
 
 
-.ad a{display: inline-block;}
-.ad img{width: 205px; height:303px; margin-top: 25px;}
-.ad img:hover{opacity: 0.7; transition:all 0.6s;}
-.adbt a{
-  display: inline-block; 
-  width: 150px; height:45px ;line-height: 45px;
-  border: 1px solid darkkhaki; margin-top: 10px;
-  border-radius: 2px; font-size: 13px; padding-left: 25px;}
-.adbt span{
-  display:block;width: 20px; height: 2px; background: #000; margin-bottom: 2px; border-radius: 10px;
-  position: relative;top:-27px; left:6px; }
-
-
-
+        .ad a{display: inline-block;}
+        .ad img{width: 205px; height:303px; margin-top: 25px;}
+        .ad img:hover{opacity: 0.7; transition:all 0.6s;}
+        .adbt a{
+          display: inline-block; 
+          width: 150px; height:45px ;line-height: 45px;
+          border: 1px solid darkkhaki; margin-top: 10px;
+          border-radius: 2px; font-size: 13px; padding-left: 25px;}
+        .adbt span{
+          display:block;width: 20px; height: 2px; background: #000; margin-bottom: 2px; border-radius: 10px;
+          position: relative;top:-27px; left:6px; }
 
 
 
+
+
+/* FOOTER 시작 */
 footer{
-  transform: translateY(560%);  width: 100%; 
-  background: #5a6373; height: 150px; color: #ccc; font-size: 15px; padding-top: 20px;}
+  background: #5a6373; 
+  height: 150px;
+  color: #ccc; font-size: 15px;
+  padding-top: 20px;}
 .footer{max-width: 55%; margin: 0 auto; position: relative;}
 .foot{ font-size: 15px; padding-bottom: 20px;}
 .foot a{padding-right: 20px;}
@@ -355,7 +364,7 @@ footer{
 
 
 
-
+/* 사이드 fixed 메뉴 */
 .sidemenubar{
   position: fixed; top:50%; right:0; margin-top: -135px;   }
 .sideb{text-align: center;}
