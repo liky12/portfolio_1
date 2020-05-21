@@ -84,6 +84,8 @@
               text-align: center; line-height: 1.5;
               opacity: 0; z-index: 999999;}
             #product p+p{display: none;}
+
+            
             
         
 
@@ -105,10 +107,10 @@
                 position: absolute; top:50%; left:68%; 
                 width: 100px; height: 100%;  color: #fff;}
 
-                .tabbg{
-                  margin-top: 30px;/* .mov 사용시 주석처리*/
-                  background: rgba(246,246,246);height: 550px;
-                padding: 0 10px;}
+
+
+
+
 
 
 
@@ -289,10 +291,7 @@
                 .pdul2 li:nth-last-child(even){margin-left: 0%;}
 
 
-                .tabbg{
-                  margin-top: 30px;/* .mov 사용시 주석처리*/
-                  background: rgba(246,246,246);height: 450px;
-                padding: 0 10px;}
+   
 
                 .tab {max-width: 1000px; margin: 0 auto; padding-top: 40px;}
                 .tabmenu>li{
