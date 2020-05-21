@@ -377,7 +377,8 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
 
 
         .ad a{display: inline-block;}
-        .ad img{width: 204px; height:303px; margin-top: 25px; opacity: 0.7;}
+        .ad img
+        {width: 190px; height:303px; margin-top: 25px; opacity: 0.7;}
         .ad img:hover{opacity: 1; transition:all 0.6s;}
         .adbt a{
           display: inline-block; 
