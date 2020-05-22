@@ -143,12 +143,12 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
     content: ""; display: block; width: 0; height: 0;
     border: 6px solid rgba(1,1,1,0.4); 
     border-top:none; border-left-color:transparent ; border-right-color: transparent;
-    position: absolute; left: 46%; top:-6px}
+    position: absolute; left: 45.5%; top:-6px}
   .depth2 li:first-child:hover .ta{ 
     content: ""; display: block; width: 0; height: 0;
     border: 6px solid rgba(1,1,1,0.8); 
     border-top:none; border-left-color:transparent ; border-right-color: transparent;
-    position: absolute; left: 46%; top:-6px; transition: all 1s;}
+    position: absolute; left: 45.5%; top:-6px; transition: all 1s;}
 
 
 
