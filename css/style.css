@@ -76,7 +76,7 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
 .openMOgnb,.closeMOgnb {display: none;}
 
 #wrap{position: relative;}
-#header { 
+#header {
   position: absolute; top:0; left: 0;
   width:100%;height:100px; 
   z-index: 99999; color: #fff; 
@@ -119,7 +119,7 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
 .depth1>li>a{
   display:inline-block; 
   /* border: 1px solid darkkhaki; */
-  width:95px; height: 60px;
+  width:95px; height: 55px;
   text-align: center; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);}
 
 .depthbox2{   
@@ -128,7 +128,7 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
   z-index: 9999999; font-weight: normal; font-size: 16px;}
 .depth1>li:hover .depthbox2{    
   opacity: 0.9; 
-  position: absolute; top:60%; width: 110%; left: -6px; 
+  position: absolute; top:80%; width: 110%; left: -6px; 
   transition: all 0.8s; }
 
 .depth2 > li > a{
@@ -284,7 +284,7 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
-  position: relative; margin:100px 0 130px;}
+  position: relative; margin:150px 0 130px;}
 .linetext{position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
 .linetext h3{font-size: 40px;}
 .linetext p{font-size: 18px;}
@@ -469,13 +469,15 @@ footer{
 /* join.html */
 .joinbg{
   width: 100%; height:350px;
-  background-image:url(../img/back1.jpg) ;
+  background-image:url(../img/join.jpg) ;
   background-repeat: no-repeat; background-size: cover;
-  background-position: 50% 30%;
+  /* background-position: 50% 30%;
+   */
+   background-position: 50% 65%;
   position: relative; }
-.joinbox{font-size: 38px; color:rgb(253, 234, 206); max-width: 1000px; margin: 0 auto;}
+.joinbox{font-size: 38px; color:rgb(255, 255, 255); max-width: 1000px; margin: 0 auto;}
 .joinbox h3{
-  display: inline-block; font-weight: bold; padding-right: 60px;  text-shadow: 5px 5px 3px rgba(0,0,0,0.2);
+  display: inline-block; font-weight: bold; padding-right: 60px;  text-shadow: 5px 5px 3px rgba(49, 49, 49, 0.473);
 padding-top: 270px;}
 .joinbox h3:first-child:after{content: "|"; display: inline-block; position: relative; top:-8px; left: 30px; font-size: 23px;}
 

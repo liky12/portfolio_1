@@ -306,6 +306,9 @@
                     border-bottom: 1px solid gray; }
 
 
+                    .notul li{float: left; width:30%; margin-left: 5%; overflow: hidden;}
+
+
 footer{display: none;}
 
               
