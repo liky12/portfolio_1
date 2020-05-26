@@ -111,11 +111,12 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
 #header nav{
     position: absolute; top:100%; left:59%;
     transform: translate(-55%,-100%);
-    /* border:1px solid darkcyan;  */
+
     height: 60px; line-height: 20px; padding: 0 10px 30px;}
 
-.depth1>li{ 
-  display:inline-block; 
+.depth1>li{     
+
+  display:inline-block;
   font-size:18px; font-weight: bold;
    position: relative;}
 .depth1>li:nth-child(1):after,
@@ -127,15 +128,15 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
   position: relative; top:-2px; left:0px;}
 
 .depth1>li>a{
+  width:90px;  height: 55px;
   display:inline-block; 
   /* border: 1px solid darkkhaki; */
-  width:95px; height: 55px;
   text-align: center; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);}
 
 .depthbox2{  
   display: none;
    opacity: 0.9; 
-  position: absolute; top:80%; width: 110%; left: -6px; }
+  position: absolute; top:80%; width: 110%; left: -6px; font-size: 16px;}
 /* .depthbox2{   
   opacity: 0; 
   position: absolute; left: -6px; top:30%; text-align: center;
@@ -145,26 +146,26 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
   position: absolute; top:80%; width: 110%; left: -6px; 
   transition: all 0.8s; } */
 
-.depth2 > li > a{
-  font-weight: normal;text-align: center;
-  display: block; padding: 15px; background: rgba(1,1,1,0.4);}
+.depth2 > li > a{text-align: center;color: rgb(61, 61, 61);
+  display: block; 
+  padding: 15px; background: rgba(255, 254, 254, 0.719);}
 .depth2 >li:first-child>a{ border-radius: 10px 10px 0 0; }
 .depth2 > li:last-child>a{border-radius: 0 0 10px 10px;}
 
 .depth1>li>a:hover{color: rgb(252, 242, 225);}
-.depth2 > li > a:hover {background: rgba(1,1,1,0.8); transition: all 1s;}
+.depth2 > li > a:hover {color:rgba(231, 175, 72, 0.5);transition: all 0.5s;}
 
-.depth2 .ta{    
+/* .depth2 .ta{    
   content: ""; display: block; width: 0; height: 0;
   border: 6px solid rgba(1,1,1,0.4); 
   border-top:none; border-left-color:transparent ; border-right-color: transparent;
-  position: absolute; left: 45.5%; top:-6px;}
-
+  position: absolute; left: 45.5%; top:-6px;} */
+/* 
   .depth2 li:first-child:hover .ta{ 
     content: ""; display: block; width: 0; height: 0;
     border: 6px solid rgba(1,1,1,0.8); 
     border-top:none; border-left-color:transparent ; border-right-color: transparent;
-    position: absolute; left: 45.5%; top:-6px; transition: all 1s;}
+    position: absolute; left: 45.5%; top:-6px; transition: all 1s;} */
 
 
 
@@ -205,7 +206,7 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
     background-repeat: no-repeat; background-size: cover;
     background-position: 50% 35%;
     position: relative; }
-.sd1, .sd3 {display: none;}
+.sd1, .sd2 {display: none;}
 .sdgimg .text{
   position: absolute; 
   top:38%; left: 10%; 
@@ -327,10 +328,8 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
 
 
 
-
-
-
-/* .mov{margin-top: 180px;
+.mov{
+  margin-top: 130px;
   width: 100%;
   height: 500px;
   background-image: url(../img/bg2.png);
@@ -341,20 +340,12 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
 .mov h3{
   font-size: 30px; color: #fff; font-weight: bolder; text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
   padding: 30px 0 0 40px; }
-.mov video{  width: 700px; position: absolute; top: 50%; transform: translateY(-50%); left: 24%;} */
-
-
-
-
-
-
-
-
+.mov video{  
+  width: 700px; position: absolute; top: 50%; transform: translateY(-50%); left: 10%;}
 
 
 
 .tabbg{
-  margin-top: 30px;/* .mov 사용시 주석처리*/
   background: rgba(246,246,246);height: 515px;}
 .tab {max-width: 1000px; margin: 0 auto; padding-top: 70px;}
 .tabmenu{position: relative;}
