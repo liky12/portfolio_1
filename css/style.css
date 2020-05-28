@@ -78,170 +78,92 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
 #wrap{position: relative;}
 #header {
   position: absolute; top:0; left: 0;
-  width:100%;height:100px; 
-  z-index: 99; color: #fff; 
-  border: 1px solid chocolate;
-}
-#header .logo{
-  float:left; width:20%;height: 100%;
-  border: 1px solid darkkhaki; }
+  width:100%;height:80px; 
+  z-index: 99;  position: relative;}
+#header .logo{float:left; width: 20%;}
 #header h1 a{
-   padding: 30px 0;
-    display: inline-block; 
-    text-align: center;
-    border: 1px solid palevioletred;
-    font-size: 36px; 
-    font-family: 'Concert One', cursive;
-    text-shadow: 5px 5px 3px rgba(0,0,0,0.2);}
+  display: inline-block; 
+  width: 200px;
+  height: 80px; line-height: 80px;
+  text-align: center; font-size: 25px; font-weight: bold; }
 
-.content1{
-   float:right; width:55%; 
-   border: 1px solid darkkhaki; }
 
-.jb{text-align: right; }
-.jb li{display: inline-block;}
-.jb a{
-   display: inline-block;
-  width: 50px; height: 25px;line-height: 25px; 
-  font-size: 13px; text-align: center; 
-  border-radius: 0 0 8px 8px; color:#000; }
+.content1{float:right; width:80%; height: 80px; margin-top: 25px;}
 
-.snsicon {text-align: right;  }
-.snsicon li{display: inline-block; padding-left:20px;font-size:25px; 
-  text-shadow: 5px 5px 3px rgba(0,0,0,0.2); 
-  font-family:'Font Awesome 5 Brands'; font-weight:400 !important}
-.snsicon li:hover{transform: scale(1.2); transition: all 0.6s;}
-
-.depth1{text-align: right;}
-.depth1>li{display:inline-block;  font-size:18px; font-weight: bold;}
-.depth1>li:nth-child(1):after,
-.depth1>li:nth-child(2):after,
-.depth1>li:nth-child(3):after,
-.depth1>li:nth-child(4):after{
-  content:"|"; display: inline-block; 
-  font-weight: normal; font-size: 7px; 
-  position: relative; top:-2px; left:0px;}
-.depth1>li>a{ 
+.depth1{text-align: left; float:left; width: 70%;}
+.depth1>li{display:inline-block;  font-size:16px; }
+.depth1>li>a{
   width:78px ;
-   height: 50px; line-height: 50px;
+  height: 50px; line-height: 35px;
   display:inline-block; 
-   border: 1px solid darkkhaki;
-  text-align: center; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);} 
-  
+  text-align: center;} 
 .depthbox2{  
   display: none; position: absolute;
-  width: 100%;  font-size: 16px; background: white;  left: 0; top:100% ;
-  z-index: 99999;}
-/* .depthbox2{   
-  opacity: 0; 
-  position: absolute; left: -6px; top:30%; text-align: center;
-  z-index: 9999999; font-weight: normal; font-size: 16px;}*/
-.depth1:hover .depthbox2{display: block;} 
+  width: 100%;  font-size: 16px; left: 0; top:100% ;
+  z-index: 99999; background: #fff;padding: 20px 0;}
+.depth1 li:hover .depthbox2{display: block; color: #000; } 
+.depth2  li  a{display: block; padding: 15px 0;}
+
+.jb{float:left; width:15%;text-align:right; }
+.jb li{display: inline-block; padding-left: 5px;}
+.jb a{
+   display: inline-block; height: 50px;line-height: 40px; 
+  font-size: 13px; text-align: center;color:#000; }
 
 
-.depth2  li  a{
-  text-align: center;color: rgb(61, 61, 61);
-  display: block; 
-  padding: 15px; background: rgba(255, 254, 254, 0.719);}
-/* .depth2 >li:first-child>a{ border-radius: 10px 10px 0 0; } */
-/* .depth2 > li:last-child>a{border-radius: 0 0 10px 10px;} */
-
-/* .depth1>li>a:hover{color: rgb(252, 242, 225);} */
-/* .depth2 > li > a:hover {color:rgba(231, 175, 72, 0.5);transition: all 0.5s;} */
-
-/* .depth2 .ta{    
-  content: ""; display: block; width: 0; height: 0;
-  border: 6px solid rgba(1,1,1,0.4); 
-  border-top:none; border-left-color:transparent ; border-right-color: transparent;
-  position: absolute; left: 45.5%; top:-6px;} */
-/* 
-  .depth2 li:first-child:hover .ta{ 
-    content: ""; display: block; width: 0; height: 0;
-    border: 6px solid rgba(1,1,1,0.8); 
-    border-top:none; border-left-color:transparent ; border-right-color: transparent;
-    position: absolute; left: 45.5%; top:-6px; transition: all 1s;} */
-
-
-
-
-
+.snsicon {text-align: right;float:right; width: 15%;}
+.snsicon > li{
+  height: 50px; line-height: 40px;
+  display: inline-block; padding-left:20px;font-size:22px; 
+  font-family:'Font Awesome 5 Brands'; font-weight:400 !important}
+.snsicon > li:nth-child(2):hover,
+.snsicon > li:nth-child(3):hover{transform: scale(1.1); transition: all 0.8s;}
+.snsicon .login{display: none;}
+.snsicon li:first-child{position: relative;}
+.snsicon li:first-child:hover .login{display: block;}
+.login{
+  position: absolute; top:80%; right: -30%;
+  width:200px; padding: 15px 0; text-align: left;
+  background: #fff;  border-radius: 25px; 
+  border: 1px solid rgb(209, 209, 209);} 
+.login a{
+  text-align: left; display: inline-block; 
+  padding: 10px 20px; font-size: 13px; font-weight: normal;}
 
 
 /* section 시작 */
-
-.sdgimg { }
 .sdgimg .sd1{
-  width: 100%; height:963px;
+  width: 100%; height:800px;
   background-image:url(../img/back1.jpg) ;
   background-repeat: no-repeat; background-size: cover;
   background-position: center;
   position: relative; }
 .sdgimg .sd2{
-  width: 100%; height:936px;
+  width: 100%; height:800px;
   background-image:url(../img/back2.jpg) ;
   background-repeat: no-repeat; background-size: cover;
   background-position: 50% 70%;
   position: relative; }
 .sdgimg .sd3{
-    width: 100%; height:936px;
+    width: 100%; height:800px;
     background-image:url(../img/back3.jpg) ;
     background-repeat: no-repeat; background-size: cover;
     background-position: 50% 35%;
     position: relative; }
-.sd1, .sd2 {display: none;}
+.sd3, .sd2 {display: none;}
 .sdgimg .text{
   position: absolute; 
-  top:38%; left: 10%; 
+  top:50%; left: 10%; 
   color: papayawhip;} 
-.text h3{font-size:62px; letter-spacing: 3px; line-height: 1.3; }
+.text h3{font-size:50px; letter-spacing: 3px; line-height: 1.3; }
 .text p{font-size: 16px; padding-top: 43px;}
-.sdlign{background: papayawhip; width :900px; height: 1px; display: inline-block; margin-top: 40px;}
 
 
 
-.sdmenu{ 
-  position: absolute; top:323px ;left:82%;
-  text-align: left; font-weight: bold; 
-  box-shadow: 5px 5px 5px rgba(58,42,25,0.5); }
-.sm li a{
-    display: block; width: 150px; 
-    height: 90px; line-height: 90PX; 
-    color: papayawhip; font-weight: bold;
-    background: darkseagreen; text-align: left; 
-    padding-left: 15px; 
-    border-bottom: 1px solid rgba(0,0,50,0.3);}
-.sm li:first-child a{ 
-      height: 120px; line-height: 1.4;
-    background: sandybrown; padding-top: 37px;}
-.sm li:last-child a{border-bottom: none;}
-.sm li:first-child a:after{
-    content:">"; display: inline-block; font-size: 10px; 
-    position: relative; left: 50px;}
-.sm li+li a:after,
-.sm li+li+li+li a:after{
-    content:">"; display: inline-block; 
-    font-size: 10px; 
-    position: relative;left: 50px;}
-.sm li+li+li a:after{    
-    content:">"; display: inline-block; 
-    font-size: 10px; 
-    position: relative;left: 32px;}
-.sm li:hover{
-  opacity: 0.99; 
-  /* transition: 0.8s; */}
-.sm li:hover a{ 
-  box-shadow: 4px 4px 3px  rgba(0,0,50,0.3);
-    transition: 0.2s;
-}
-
-
-
-
-
-/* #product{position: relative; padding-bottom: 200px; } */
+#product{position: relative; padding-bottom: 50px; }
 #product h3{
-   font-size: 39px; text-align: center; font-weight: bold;
-   padding: 120px 0 100px; font-family:; border-bottom: 1px solid rgb(211, 211, 211) ; }
+   font-size: 27px; text-align: center; font-weight: bold;
+   padding: 50px 0 ; font-family:; border-bottom: 1px solid rgb(211, 211, 211) ; }
 .pdimg {
   margin: 0 auto; 
   max-width: 1600px;
@@ -261,20 +183,28 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
   font-size: 20px;
   text-align: center; line-height: 1.5;
   opacity: 0; z-index: 999999;}
-  .pdtext p+p{font-weight: normal;}
+.pdtext p+p{font-weight: normal;}
 .pdimgbox:hover .pdtext{opacity: 1;  transition: all 0.7s 0.3s;}
 
-  
+
+.mov{
+  /* margin-top: 50px; */
+  width: 100%;
+  height: 900px;
+  background: rgb(201,180,179);
+  position: relative;}
+.mov h3{font-size: 30px;padding: 30px;text-align: center;font-weight:bold;}
+.mov iframe{position: absolute; top: 55%; left: 50%; transform: translate(-50%,-50%);border-radius: 25px; }
+
 
 
 .linebg{
-  height: 400px;
+  height: 400px; text-align: center;
   background-image: url(../img/bgproduct.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  text-align: center;
-  position: relative; margin:150px 0 120px;}
+  position: relative; margin:50px 0;}
 .linetext{position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
 .linetext h3{font-size: 40px;}
 .linetext p{font-size: 18px;}
@@ -282,11 +212,9 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
 
 
 
-
-
 .product2 h3{
-  font-size: 39px; text-align: center; font-weight: bold;
-  padding-bottom: 100px; font-family:; border-bottom: 1px solid rgb(211, 211, 211) ; }
+  font-size: 27px; text-align: center; font-weight: bold;
+  padding-bottom: 50px; font-family:; border-bottom: 1px solid rgb(211, 211, 211) ; }
 .pdul2{ max-width: 1000px; margin: 0 auto;}
 .pdul2 li{
   float: left; width: 49%;
@@ -310,26 +238,13 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
 
 
 
-.mov{
-  margin-top: 130px;
-  width: 100%;
-  height: 500px;
-  background-image: url(../img/bg2.png);
-  background-size: cover;
-  background-position:20% 10%;
-  background-attachment: fixed;
-  position: relative;}
-.mov h3{
-  font-size: 30px; color: #fff; font-weight: bolder; text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
-  padding: 30px 0 0 40px; }
-.mov video{  
-  width: 700px; position: absolute; top: 50%; transform: translateY(-50%); left: 10%;}
+
 
 
 
 .tabbg{
   background: rgba(246,246,246);height: 515px;}
-.tab {max-width: 1000px; margin: 0 auto; padding-top: 70px;}
+.tab {padding-top: 70px;}
 .tabmenu{position: relative;}
 .tabmenu>li{
   float: left; width: 32%; height: 45px; line-height: 45px;
@@ -400,7 +315,7 @@ footer{
   height: 150px;
   color: #ccc; font-size: 15px;
   padding-top: 20px;}
-.footer{max-width: 1000px; margin: 0 auto; position: relative;}
+.footer{position: relative;}
 .foot{ font-size: 15px; padding-bottom: 20px;}
 .foot a{padding-right: 20px;}
 .foot a:hover{text-decoration: underline;}
