@@ -93,16 +93,31 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
 .depth1{text-align: left; float:left; width: 70%;}
 .depth1>li{display:inline-block;  font-size:16px; }
 .depth1>li>a{
-  width:78px ;
-  height: 50px; line-height: 35px;
+  width:78px ;border: 1px solid salmon;
+  height: 55px; line-height: 35px;
   display:inline-block; 
   text-align: center;} 
-.depthbox2{  
+.depthbox2{ 
   display: none; position: absolute;
-  width: 100%;  font-size: 16px; left: 0; top:100% ;
+  width: 100%;height: 600px;  font-size: 16px; left: 0; top:100% ;
   z-index: 99999; background: #fff;padding: 20px 0;}
-.depth1 li:hover .depthbox2{display: block; color: #000; } 
+/* .depth2 li{border: 1px solid chartreuse;} */
+.depth2 li:first-child{margin-top: 55px;}
 .depth2  li  a{display: block; padding: 15px 0;}
+.depth2 li:hover{font-weight: bold;}
+
+.menu1_img{ position: absolute; top:50%; left: 26.5%; transform: translateY(-50%); }
+.menu1_img li{display: inline-block; 
+  width: 448px; height: 448px; overflow: hidden;border-radius: 25px;}
+.menu1_img li:first-child{margin-right: 10px;}
+.menu1_img img{
+  max-width: 100%; 
+  display: inline-block; }
+.menu1_img img:hover{transform: scale(1.05);transition: all 0.8s;}
+
+
+
+
 
 .jb{float:left; width:15%;text-align:right; }
 .jb li{display: inline-block; padding-left: 5px;}
@@ -114,17 +129,17 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
 .snsicon {text-align: right;float:right; width: 15%;}
 .snsicon > li{
   height: 50px; line-height: 40px;
-  display: inline-block; padding-left:20px;font-size:22px; 
+  display: inline-block; margin: 0 10px;font-size:22px; 
   font-family:'Font Awesome 5 Brands'; font-weight:400 !important}
 .snsicon > li:nth-child(2):hover,
 .snsicon > li:nth-child(3):hover{transform: scale(1.1); transition: all 0.8s;}
 .snsicon .login{display: none;}
 .snsicon li:first-child{position: relative;}
 .snsicon li:first-child:hover .login{display: block;}
-.login{
+.login{ 
   position: absolute; top:80%; right: -30%;
   width:200px; padding: 15px 0; text-align: left;
-  background: #fff;  border-radius: 25px; 
+  background: #fff;  border-radius: 25px; z-index: 9999999;
   border: 1px solid rgb(209, 209, 209);} 
 .login a{
   text-align: left; display: inline-block; 
@@ -213,7 +228,7 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
 .tabbt{
   position: absolute; top:80%; left: 50%; transform: translateX(-50%);
   color: #fff; text-shadow:0 0 7px rgba(0,0,0,0.46) ; text-align: center;}
-.tabbt p{margin-bottom: 50px; font-size: 35px;}
+.tabbt p{margin-bottom: 35px; font-size: 35px;}
 .tabbt a{ display: inline-block; width:150px; height: 45px; line-height: 45px;
   background: #000; color: #fff; text-align: center; font-size: 15px;
   border-radius: 25px; }
@@ -278,15 +293,15 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
     width: 150px; height: 100%; line-height: 1.3;}
 .pdul2>li:nth-child(even) .pd2txt3{position: absolute; top:88%; right:100%; width: 150px; height: 100%;}
 
-.pdul2 .pd2box:hover img{transform: scale(1.1); opacity: 0.7; transition: all 1s;}
+.pdul2 .pd2box:hover img{transform: scale(1.1); opacity: 0.7; transition: all 1.9s;}
 
 .pdul2>li:nth-child(odd) .pd2box:hover .pd2tbg{
-  left: 50%; background: rgba(0,0,0,0.8);  transition: all 0.7s;}
+  left: 50%; background: rgba(0,0,0,0.8);  transition: all  1s;}
 .pdul2>li:nth-child(even) .pd2box:hover .pd2tbg{
-  right: 50%; background: rgba(0,0,0,0.8);  transition: all 0.7s;}
+  right: 50%; background: rgba(0,0,0,0.8);  transition: all  1s;}
 .pdul2>li:nth-child(odd) .pd2box:hover .pd2txt{left:150%; transition: all  1.1s;}
 .pdul2>li:nth-child(odd) .pd2box:hover .pd2txt2{ left: 54%; transition: all 1.3s;}
-.pdul2>li:nth-child(odd) .pd2box:hover .pd2txt3{ left:85%; transition: all 1.5s 0.5s;}
+.pdul2>li:nth-child(odd) .pd2box:hover .pd2txt3{ left:85%; transition: all 1.5s 0.6s;}
 .pdul2>li:nth-child(even) .pd2box:hover .pd2txt{right:150%; transition: all  1.1s;}
 .pdul2>li:nth-child(even) .pd2box:hover .pd2txt2{ right: 54%; transition: all 1.3s;}
 .pdul2>li:nth-child(even) .pd2box:hover .pd2txt3{ right:77%; transition: all 1.5s 0.5s;}
