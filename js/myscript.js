@@ -24,7 +24,6 @@ $(".tab_menu > a").eq(1).on("click",function(){
     $(this).siblings().css("color","white").css("border-bottom","none")
     $(this).parent().siblings().removeClass("on")
     $(this).parent().siblings(".tab_product").addClass("on")
-
 })
 $(".tab_menu >a").eq(2).on("click",function(){
     $(this).css("color","red").css("border-bottom","1px solid red")

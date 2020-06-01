@@ -98,7 +98,7 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
   width:94px ;
   height: 55px; line-height: 35px;
   display:inline-block; 
-  text-align: center;} 
+  text-align: center; font-weight: bold;} 
 .depthbox2{ 
   display: none; position: absolute;
   width: 100%;height: 600px;  font-size: 16px; left: 0; top:100% ;
@@ -128,6 +128,10 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
 .menu3_img li{float:left; width: 31%; border-radius: 25px; overflow: hidden; margin-bottom: 20px;}
 .menu3_img li:nth-child(2),
 .menu3_img li:nth-child(5){margin-right: 20px; margin-left: 20px;}
+
+
+
+
 
 
 .jb{float:left; width:15%;text-align:right; }
@@ -185,11 +189,10 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
 .text p{font-size: 16px; padding-top: 43px;}
 
 
-
 #product{position: relative; padding-bottom: 50px; }
 #product h3{
    font-size: 27px; text-align: center; font-weight: bold;
-   padding: 50px 0 ; font-family:; border-bottom: 1px solid rgb(211, 211, 211) ; }
+   padding: 50px 0 ; border-bottom: 1px solid rgb(211, 211, 211) ; }
 .pdimg {  margin: 0 auto;   max-width: 1600px; height: 300px; overflow: hidden;} 
 .pdimg li{float: left; width: 20%; overflow: hidden;}
 .pdimg img{max-width:100%;}
@@ -264,7 +267,8 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
   height: 100%; width: 100%;
   background-image: url(../img/tab_p4.png); 
   background-size: cover;}
-.tab_product2 iframe{width: 600px; height: 400px; 
+.tab_product2 iframe{
+  width: 600px; height: 400px; 
   position: absolute; top:50%; left:55%; transform: translateY(-50%);}
 
 .tab_product2, .tab_product ,.tab_mov{display: none;}
@@ -292,7 +296,7 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
 .pdul2>li:nth-child(odd) .pd2txt{position: absolute; top:50%; left:82%; transform: translate(-50%);}
 .pdul2>li:nth-child(odd) .pd2txt2{ position: absolute; top:55%; left:100%; 
   width: 150px; height: 100%; line-height: 1.3;}
-.pdul2>li:nth-child(odd) .pd2txt3{position: absolute; top:88%; left:100%; 
+.pdul2>li:nth-child(odd) .pd2txt3{position: absolute; top:88%; left:110%; 
     width: 150px; height: 100%;}
 .pdul2>li:nth-child(even) .pd2txt{position: absolute; top:50%; right:70%; transform: translate(-50%);}
 .pdul2>li:nth-child(even) .pd2txt2{ position: absolute; top:55%; right:100%; 
@@ -307,7 +311,7 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
   right: 50%; background: rgba(0,0,0,0.8);  transition: all  1s;}
 .pdul2>li:nth-child(odd) .pd2box:hover .pd2txt{left:150%; transition: all  1.1s;}
 .pdul2>li:nth-child(odd) .pd2box:hover .pd2txt2{ left: 54%; transition: all 1.3s;}
-.pdul2>li:nth-child(odd) .pd2box:hover .pd2txt3{ left:85%; transition: all 1.5s 0.6s;}
+.pdul2>li:nth-child(odd) .pd2box:hover .pd2txt3{ left:85%; transition: all 1.5s 0.5s;}
 .pdul2>li:nth-child(even) .pd2box:hover .pd2txt{right:150%; transition: all  1.1s;}
 .pdul2>li:nth-child(even) .pd2box:hover .pd2txt2{ right: 54%; transition: all 1.3s;}
 .pdul2>li:nth-child(even) .pd2box:hover .pd2txt3{ right:77%; transition: all 1.5s 0.5s;}
