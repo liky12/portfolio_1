@@ -77,10 +77,12 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
 
 .openMobgnb{display: none;}
 #wrap{position: relative;}
+header{position: relative;}
 #header {
   position: absolute; top:0; left: 0;
-  width:100%;height:80px; 
-  z-index: 99;  position: relative;}
+  width:100%;height:80px;
+  background: #fff; 
+  z-index: 999999999999; }
 #header .logo{float:left; width: 20%;}
 #header h1 a{
   display: inline-block; 
@@ -159,7 +161,8 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
 
 
 /* section 시작 */
-.slide{width:100%; position: relative;}
+section{width:100%; position: relative; top: 80px;}
+
 .sdgimg .sd1{
   height:810px;
   background-image:url(../img/back1.jpg) ;
@@ -178,7 +181,7 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
     background-repeat: no-repeat; background-size: cover;
     background-position: center;
     position: relative; }
-/* .sd3, .sd2 {display: none;} */
+.sd3, .sd2 {display: none;}
 .sdgimg .text{
   position: absolute; 
   top:50%; left: 10%; 
@@ -187,8 +190,8 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
 .text p{font-size: 16px; padding-top: 43px;}
 
 
-/* .main_rolling_pc{position: relative;} */
-/* .marrow{
+.main_rolling_pc{position: relative;}
+.marrow{
   position: absolute; top:50%;  transform: translateY(-50%);
   background: none; border: none;
   font-size: 50px; color: #fff;}
@@ -197,12 +200,15 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
 .slick-dots{position: absolute; bottom: 20px; width: 100%; text-align: center;}
 .slick-dots li{display: inline-block;}
 .slick-dots li button{width: 15px; height: 15px; background:#fff; border: none; text-indent: -999999px; overflow: hidden; border-radius: 50%; margin: 0 5px;}
-.slick-dots li.slick-active button{width: 40px; border-radius: 50px;} */
-/* .plpa{position: absolute; bottom: 18px; background: none; border: none; 
+.slick-dots li.slick-active button{width: 40px; border-radius: 50px;}
+.plpa{position: absolute; bottom: 18px; background: none; border: none; 
   font-size: 15px; color: #fff; right: 0%; width: 50%;
   text-align: left; padding-left: 60px;
-} */
+}
 
+.tab_slide .slick-dots li button{width: 100px; height: 30px; background:none; border: none; text-indent: 0px; overflow: hidden; border-radius:0; margin: 0 5px;
+   font-size: 18px; color: #fff; text-shadow:0 0 7px rgba(0,0,0,0.46) ;}
+.tab_slide .slick-dots{position: absolute; top: 130px; width: 100%; text-align: center;}
 
 #product{position: relative; padding-bottom: 50px; }
 #product h3{
@@ -243,17 +249,17 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
 
 /* _____________________________________________tab_content 시작 */
 .tab_content{position: relative;  width: 100%;  height: 800px;}
-.tab_content h3{
+.tab_slide h3{
   text-align: center; font-weight: bold; font-size: 28px; padding-top: 50px;
   color: #fff; text-shadow:0 0 7px rgba(0,0,0,0.46) ;}
-.tab_content .tab_menu{
+.tab_slide .tab_menu{
   position: absolute; top:15%; left: 50%; transform: translateX(-50%);}
-.tab_content .tab_menu a{
+.tab_slide .tab_menu a{
   margin: 0 15px;
   display: inline-block; height:45px; line-height:45px;
   font-size: 18px; color: #fff; text-shadow:0 0 7px rgba(0,0,0,0.46) ;}
 .tab_menu a:first-child{color:#000; border-bottom:1px solid #000}
-.tab_content p{font-size: 19px;}
+.tab_slide p{font-size: 19px;}
 .tabbt{
   position: absolute; top:80%; left: 50%; transform: translateX(-50%);
   color: #fff; text-shadow:0 0 7px rgba(0,0,0,0.46) ; text-align: center;}
@@ -263,31 +269,31 @@ body{font-family:"Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;}
   border-radius: 25px; }
 
 .tab_mov{
-  height: 100%; width: 100%;
+  height: 800px; width: 100%;
   background-image: url(../img/tab_p3.png); 
-  background-size: cover;}
+  background-size: cover;  position: relative;}
 .tab_mov iframe{ width: 600px; height: 400px; border-radius: 25px;
   position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
 
 .tab_product{
-  height: 100%; width: 100%;
+  height: 800px; width: 100%;
   background-image: url(../img/tab_p2.png); 
-  background-size: cover;}
+  background-size: cover; position: relative;}
 .p_txt{position: absolute; top:45%; left:65%;}
 .p_txt .sun{font-size: 38px; padding-left: 50px;padding-bottom: 10px;}
 .p_txt .di {font-size: 38px; padding-left: 30px;padding-bottom: 30px;}
 .p_txt p:last-child{font-size: 55px;}
 
 .tab_product2{
-  height: 100%; width: 100%;
+  height: 800px; width: 100%;
   background-image: url(../img/tab_p4.png); 
-  background-size: cover;}
+  background-size: cover; position: relative;}
 .tab_product2 iframe{
   width: 600px; height: 400px; 
   position: absolute; top:50%; left:55%; transform: translateY(-50%);}
 
-.tab_product2, .tab_product ,.tab_mov{display: none;}
-.tab_product2.on, .tab_product.on ,.tab_mov.on{display: block;}
+/* .tab_product2, .tab_product ,.tab_mov{display: none;}
+.tab_product2.on, .tab_product.on ,.tab_mov.on{display: block;} */
 
 
 /* _____________________________________product2 시작 */
@@ -352,7 +358,7 @@ footer{
 
 /* 사이드 fixed 메뉴 */
 .sidemenubar{
-  position: fixed; top:50%; right:0; margin-top: -135px;   }
+  position: fixed; top:30%; right:0; margin-top: -135px;   }
 .sideb{text-align: center;}
 .sideb>li{ border-bottom: 1px dotted rgba(0, 0, 0, 0.5); }
 
