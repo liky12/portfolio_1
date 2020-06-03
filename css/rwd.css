@@ -7,31 +7,12 @@
 }
 
 @media screen and (max-width:1380px){
-.tab_product2{
-  height: 100%; width: 100%;
-  background-image: url(../img/tab_p4.png); 
-  background-size: cover;
-background-position: 45% 50%;}
-.tab_product2 iframe{
-  width: 600px; height: 400px; 
-  position: absolute; top:50%; left:50%; transform: translateY(-50%);}
  }
 
 @media screen and (max-width:1200px){
 .mainmenu{text-align: left; float:left; width: 55%;}
 .jb{float:left; width:22.5%;text-align:right; }
 .snsicon {text-align: right;float:right; width: 22.5%;}
-#product{position: relative; padding-bottom: 0px;}
-.tab_mov{
-    height: 100%; width: 100%;
-    background-image: url(../img/tab_p3.png); 
-    background-size: cover;
-    background-position: 25% 50%;}
-.tab_mov iframe{ width: 600px; height: 400px; border-radius: 25px;
-    position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
-.tab_product2 iframe{
-    width: 500px; height: 400px; 
-    position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);}
    .pdul2{ max-width: 700px; margin: 0 auto; overflow: hidden;} 
    .pdul2 li{  
     float: left; width: 100%; height: 300px; overflow: hidden; 

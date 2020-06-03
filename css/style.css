@@ -194,22 +194,20 @@ section{width:100%; position: relative; top: 80px;}
 .marrow{
   position: absolute; top:50%;  transform: translateY(-50%);
   background: none; border: none;
-  font-size: 50px; color: #fff;}
-.prevArrow{left:15px; z-index: 9999;}
-.nextArrow{right:20px}
+  font-size: 45px; color: rgba(255, 255, 255, 0.445);}
+.prevArrow{left:50px; z-index: 9999;}
+.nextArrow{right:55px}
 .slick-dots{position: absolute; bottom: 20px; width: 100%; text-align: center;}
 .slick-dots li{display: inline-block;}
-.slick-dots li button{width: 15px; height: 15px; background:#fff; border: none; text-indent: -999999px; overflow: hidden; border-radius: 50%; margin: 0 5px;}
-.slick-dots li.slick-active button{width: 40px; border-radius: 50px;}
-.plpa{position: absolute; bottom: 18px; background: none; border: none; 
-  font-size: 15px; color: #fff; right: 0%; width: 50%;
-  text-align: left; padding-left: 60px;
-}
+.slick-dots li button{width: 15px; height: 15px; background:rgba(255, 255, 255, 0.466); border: none; text-indent: -999999px; overflow: hidden; border-radius: 50%; margin: 0 5px;}
+.slick-dots li.slick-active button{
+  width: 50px; border-radius: 50px;background:rgba(255, 255, 255, 0.774);}
 
-.tab_slide .slick-dots li button{width: 100px; height: 30px; background:none; border: none; text-indent: 0px; overflow: hidden; border-radius:0; margin: 0 5px;
-   font-size: 18px; color: #fff; text-shadow:0 0 7px rgba(0,0,0,0.46) ;}
-.tab_slide .slick-dots{position: absolute; top: 130px; width: 100%; text-align: center;}
 
+.tab_slide .slick-dots li button{width: 80px; height: 50px; background:none; border: none; text-indent: 0px; overflow: hidden; border-radius:0; margin: 0 20px;
+font-size: 18px; color: #fff; text-shadow:0 0 7px rgba(0,0,0,0.46) ;}
+.tab_slide .slick-dots{position: absolute; top: 115px; width: 100%; text-align: center;}
+.tab_slide .slick-dots li.slick-active button{border-bottom: 1px solid rgba(255, 255, 255, 0.801);}
 #product{position: relative; padding-bottom: 50px; }
 #product h3{
    font-size: 27px; text-align: center; font-weight: bold;
@@ -343,7 +341,7 @@ footer{
   background: #5a6373; 
   height: 150px;
   color: #ccc; font-size: 15px;
-  padding-top: 20px;}
+  padding-top: 20px; margin-top: 100px;}
 .footer{position: relative;}
 .foot{ font-size: 15px; padding-bottom: 20px;}
 .foot a{padding-right: 20px;}
