@@ -55,3 +55,13 @@ $(".tab_slide").slick({
 $(".topbt").on("click",function(){
     $("body,html").animate({scrollTop:"0px"},600);
 })
+
+$(".plpa").on("click",function(){
+    if($(this).find("i").hasClass("fa-pause")){
+        $(".visualRoll").slick("slickPause")
+        $(this).find("i").removeClass("fa-pause").addClass("fa-play")
+    }else{ 
+        $(".visualRoll").slick("slickPlay")
+        $(this).find("i").removeClass("fa-play").addClass("fa-pause")
+    }
+})
