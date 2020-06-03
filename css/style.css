@@ -192,75 +192,73 @@ section{width:100%; position: relative; top: 80px;}
 .text p{font-size: 16px; padding-top: 43px;}
 
 
-.main_rolling_pc{position: relative;}
-.marrow{
-  position: absolute; top:50%;  transform: translateY(-50%);
-  background: none; border: none;
-  font-size: 45px; color: rgba(255, 255, 255, 0.445);}
-.prevArrow{left:50px; z-index: 9999;}
-.nextArrow{right:55px}
-.slick-dots{position: absolute; bottom: 20px; width: 100%; text-align: center;}
-.slick-dots li{display: inline-block;}
-.slick-dots li button{width: 15px; height: 15px; background:rgba(255, 255, 255, 0.466); border: none; text-indent: -999999px; overflow: hidden; border-radius: 50%; margin: 0 5px;}
-.slick-dots li.slick-active button{
-  width: 50px; border-radius: 50px;background:rgba(255, 255, 255, 0.774);}
-
-
-.tab_slide .slick-dots li button{width: 80px; height: 50px; background:none; border: none; text-indent: 0px; overflow: hidden; border-radius:0; margin: 0 20px;
-font-size: 18px; color: #fff; text-shadow:0 0 7px rgba(0,0,0,0.46) ;}
-.tab_slide .slick-dots{position: absolute; top: 115px; width: 100%; text-align: center;}
-.tab_slide .slick-dots li.slick-active button{border-bottom: 1px solid rgba(255, 255, 255, 0.801);}
-
-.plpa{position: absolute; bottom: 12px; background: none; border: none; 
-  font-size: 15px; color: red; right: 0%; width: 50%;
-  text-align: left; padding-left: 60px;
-}
+    /*js */
+      .slide{position: relative;}
+      .slide .marrow{position: absolute; top:50%;  transform: translateY(-50%); background: none; border: none;
+        font-size: 45px; color: rgba(255, 255, 255, 0.445);}
+      .slide .prevArrow{left:50px; z-index: 9999;}
+      .slide .nextArrow{right:55px}
+      .slide .slick-dots{position: absolute; bottom: 20px; 
+        width: calc(50% + 30px);text-align: right;}
+      .slide .slick-dots li{display: inline-block;}
+      .slide .slick-dots li button{width: 15px; height: 15px; background:rgba(255, 255, 255, 0.37); border: none; text-indent: -999999px; overflow: hidden; border-radius: 50%; margin: 0 5px;}
+      .slide .slick-dots li.slick-active button{
+        width: 50px; border-radius: 50px;background:rgba(255, 255, 255, 0.658);}
+      .plpa{position: absolute; bottom: 18px; background: none; border: none;
+        font-size: 15px; color: rgba(255, 255, 255, 0.37); right: 0%;  width: calc(50% - 30px);padding-left: 10px;
+        text-align: left;}
 
 
 
 
-#product{position: relative; padding-bottom: 50px; }
-#product h3{
-   font-size: 27px; text-align: center; font-weight: bold;
-   padding: 50px 0 ; border-bottom: 1px solid rgb(211, 211, 211) ; }
-.pdimg {  margin: 0 auto;   max-width: 1600px; height: 300px; overflow: hidden;} 
-.pdimg li{float: left; width: 20%; overflow: hidden;}
-.pdimg img{max-width:100%;}
-.pdimgbox{position: relative;}
-.pdimgbox:after{
+
+
+.slide_product h3{  font-size: 27px; text-align: center; font-weight: bold;  padding: 50px 0 ; border-bottom: 1px solid rgb(211, 211, 211) ; position: relative; z-index: ; }
+.hot_item img{max-width:100%;}
+.hottem{position: relative;}
+.hottembox{overflow: hidden; width: 300px;}
+.hottembox:after{
   content: ""; position: absolute; top:0; left:0; right:0; bottom:0;}
-.pdimgbox:hover:after{background: rgba(255,255,255,0.7); transition: all 1.2s;}
-.pdimg li:nth-child(even) .pdimgbox:hover img{transform: scale(1.2) rotate(10deg);  transition: all 1.3s;}
-.pdimg li:nth-child(odd) .pdimgbox:hover img{transform: scale(1.2) rotate(-10deg);  transition: all 1.3s;}
-.pdtext{
+.hottembox:hover:after{background: rgba(255,255,255,0.7); transition: all 1.2s;}
+.hottem:nth-child(even):hover img{transform: scale(1.2) rotate(10deg);  transition: all 1.3s; }
+.hottem:nth-child(odd):hover img{transform: scale(1.2) rotate(-10deg);  transition: all 1.3s;}
+.temtext{
   position: absolute; top:50%; left:50%; font-weight: bold;
   transform: translate(-50%,-50%);
   font-size: 20px;
   text-align: center; line-height: 1.5;
   opacity: 0; z-index: 999999;}
-.pdtext p+p{font-weight: normal;}
-.pdimgbox:hover .pdtext{opacity: 1;  transition: all 0.8s 0.3s;}
+.temtext p+p{font-weight: normal;}
+.hottembox:hover .temtext{opacity: 1;  transition: all 0.8s 0.3s;}
+
+    /*js */
+    .slide_product  .marrow{
+      position: absolute; top:50%;  transform: translateY(-50%);
+      background: none; border: none;
+      font-size: 45px; color: rgb(197, 197, 197);}
+      .slide_product  .prevArrow{left:-40px; z-index: 9999;}
+      .slide_product  .nextArrow{right:-40px}
+      .slide_product  .slick-dots{position: absolute; bottom: -30px; width: 100%; text-align: center;;}
+      .slide_product  .slick-dots li{display: inline-block;}
+      .slide_product  .slick-dots li button{width: 15px; height: 15px; background:rgb(197, 197, 197); border: none; text-indent: -999999px; overflow: hidden; border-radius: 50%; margin: 0 5px;}
+      .slide_product  .slick-dots li.slick-active button{width: 40px; border-radius: 50px;background:rgb(202, 192, 192);}
 
 
 
-.linebg{
-  height: 400px; text-align: center;
-  background-image: url(../img/bgproduct.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative; margin:50px 0;}
-.linetext{position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
-.linetext h3{font-size: 40px;}
-.linetext p{font-size: 18px;}
-.linetext h3:nth-of-type(2){padding-bottom: 20px;}
 
 
-/* _____________________________________________tab_content 시작 */
-.tab_content{position: relative;  width: 100%;  height: 800px;}
-.tab_slide h3{
-  text-align: center; font-weight: bold; font-size: 28px; padding-top: 50px;
-  color: #fff; text-shadow:0 0 7px rgba(0,0,0,0.46) ;}
+
+
+
+
+
+/* tab_content 시작 */
+.tab_content{position: relative;  width: 100%;  margin-top:100px; }
+.tab_content h3{  
+  text-align: center; font-weight: bold; font-size: 28px;
+  color: #fff; text-shadow:0 0 7px rgba(0,0,0,0.46) ;
+position: relative; top:90px; z-index: 9;}
+
 .tab_slide .tab_menu{
   position: absolute; top:15%; left: 50%; transform: translateX(-50%);}
 .tab_slide .tab_menu a{
@@ -301,11 +299,34 @@ font-size: 18px; color: #fff; text-shadow:0 0 7px rgba(0,0,0,0.46) ;}
   width: 600px; height: 400px; 
   position: absolute; top:50%; left:55%; transform: translateY(-50%);}
 
+    /*js */
+    .tab_slide .slick-dots li{display: inline-block;}
+    .tab_slide .slick-dots li button{width: 80px; height: 50px; background:none; border: none; text-indent: 0px; overflow: hidden; border-radius:0; margin: 0 20px;
+    font-size: 18px; color: #fff; text-shadow:0 0 7px rgba(0,0,0,0.46) ;}
+    .tab_slide .slick-dots{position: absolute; top: 115px; width: 100%; text-align: center;}
+    .tab_slide .slick-dots li.slick-active button{border-bottom: 1px solid rgba(255, 255, 255, 0.801);}
+
+
 /* .tab_product2, .tab_product ,.tab_mov{display: none;}
 .tab_product2.on, .tab_product.on ,.tab_mov.on{display: block;} */
 
 
-/* _____________________________________product2 시작 */
+
+/* background fixed */
+.linebg{
+  height: 400px; text-align: center;
+  background-image: url(../img/bgproduct.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; margin:50px 0;}
+.linetext{position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
+.linetext h3{font-size: 40px;}
+.linetext p{font-size: 18px;}
+.linetext h3:nth-of-type(2){padding-bottom: 20px;}
+
+
+/* product2 event */
 .product2 h3{
   font-size: 27px; text-align: center; font-weight: bold;
   padding-bottom: 50px; border-bottom: 1px solid rgb(211, 211, 211) ;}
@@ -347,7 +368,7 @@ font-size: 18px; color: #fff; text-shadow:0 0 7px rgba(0,0,0,0.46) ;}
 .pdul2>li:nth-child(even) .pd2box:hover .pd2txt3{ right:77%; transition: all 1.5s 0.5s;}
 
 
-/* ____________________________________FOOTER 시작 */
+/* FOOTER */
 footer{
   background: #5a6373; 
   height: 150px;
@@ -367,7 +388,7 @@ footer{
 
 /* 사이드 fixed 메뉴 */
 .sidemenubar{
-  position: fixed; top:30%; right:0; margin-top: -135px;   }
+  position: fixed; top:75%; right:0; margin-top: -135px;   }
 .sideb{text-align: center;}
 .sideb>li{ border-bottom: 1px dotted rgba(0, 0, 0, 0.5); }
 

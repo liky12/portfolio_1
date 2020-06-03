@@ -18,11 +18,11 @@ $(".sdgimg").slick({
     autoplay:true,//기본값 false
     autoplaySpeed:5000,//기본값3000 슬라이드 시간
     dots:true,//기본값 false 슬라이드 번호 버튼
-    speed:600, //슬라이드 이동 시간
-    slideToShow:1,//첫화면에 보여지는 슬라이드 수
-    slideToScroll:1,//넘어가는 슬라이드 수
+    speed:700, //슬라이드 이동 시간
+    slidesToShow:1,//첫화면에 보여지는 슬라이드 수
+    slidesToScroll:1,//넘어가는 슬라이드 수
     pauseOnHover:false,//  슬라이드 멈춤 여부
-    pauseOnDotsHover:true,//슬라이드 버튼 위에 마우스오버시 멈춤
+    pauseOnDotsHover:false,//슬라이드 버튼 위에 마우스오버시 멈춤
     pauseOnFocus:false,//동그라미 버븐클릭시 자동실행 멈춤여부
     cssEase:"linear",//슬라이드 가속도
     draggable:true,//마우스 드래그시 움직임 여부
@@ -34,14 +34,12 @@ $(".sdgimg").slick({
 
 
 $(".tab_slide").slick({
-    autoplay:false,//기본값 false
-    autoplaySpeed:2000,//기본값3000 슬라이드 시간
     dots:true,//기본값 false 슬라이드 번호 버튼
     speed:200, //슬라이드 이동 시간
-    slideToShow:1,//첫화면에 보여지는 슬라이드 수
-    slideToScroll:1,//넘어가는 슬라이드 수
+    slidesToShow:1,//첫화면에 보여지는 슬라이드 수
+    slidesToScroll:1,//넘어가는 슬라이드 수
     pauseOnHover:true,//  슬라이드 멈춤 여부
-    pauseOnDotsHover:false,//슬라이드 버튼 위에 마우스오버시 멈춤
+    pauseOnDotsHover:true,//슬라이드 버튼 위에 마우스오버시 멈춤
     pauseOnFocus:false,//동그라미 버븐클릭시 자동실행 멈춤여부
     cssEase:"linear",//슬라이드 가속도
     draggable:false,//마우스 드래그시 움직임 여부
@@ -50,18 +48,40 @@ $(".tab_slide").slick({
 })
 
 
-
-
 $(".topbt").on("click",function(){
-    $("body,html").animate({scrollTop:"0px"},600);
+    $("body,html").animate({scrollTop:"0px"},650);
 })
+
 
 $(".plpa").on("click",function(){
     if($(this).find("i").hasClass("fa-pause")){
-        $(".visualRoll").slick("slickPause")
+        $(".sdgimg").slick("slickPause")
         $(this).find("i").removeClass("fa-pause").addClass("fa-play")
     }else{ 
-        $(".visualRoll").slick("slickPlay")
+        $(".sdgimg").slick("slickPlay")
         $(this).find("i").removeClass("fa-play").addClass("fa-pause")
     }
 })
+
+
+
+$(".hot_item").slick({
+    centerMode: true,
+    centerPadding: '230px',
+    autoplay:true,//기본값 false
+    autoplaySpeed:2000,//기본값3000 슬라이드 시간
+    dots:true,//기본값 false 슬라이드 번호 버튼
+    speed:400, //슬라이드 이동 시간
+    slidesToShow: 3,//첫화면에 보여지는 슬라이드 수
+    slidesToScroll: 2,//넘어가는 슬라이드 수
+    pauseOnHover:true,//  슬라이드 멈춤 여부
+    pauseOnDotsHover:true,//슬라이드 버튼 위에 마우스오버시 멈춤
+    pauseOnFocus:false,//동그라미 버븐클릭시 자동실행 멈춤여부
+    cssEase:"linear",//슬라이드 가속도
+    draggable:true,//마우스 드래그시 움직임 여부
+    fade:false,//넘어가는 방향(오->왼), true:제자리아웃온 효과
+    arrows:true,//기본값true,슬라이드 방향 버튼
+    prevArrow: '<button class="prevArrow marrow"><i class="fas fa-angle-left"></i></button>',
+    nextArrow: '<button class="nextArrow marrow"><i class="fas fa-angle-right"></i></button>',
+  });
+          
