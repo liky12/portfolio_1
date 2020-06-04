@@ -211,17 +211,15 @@ section{width:100%; position: relative; top: 80px;}
 
 
 
-
-
-.slide_product h3{  font-size: 27px; text-align: center; font-weight: bold;  padding: 50px 0 ; border-bottom: 1px solid rgb(211, 211, 211) ; position: relative; z-index: ; }
-.hot_item img{max-width:100%;}
-.hottem{position: relative;}
-.hottembox{overflow: hidden; width: 300px;}
+.slide_product h3{  font-size: 27px; text-align: center; font-weight: bold;  padding: 50px 0 ; border-bottom: 1px solid rgb(211, 211, 211) ; position: relative; }
+.slide_product{padding: 0 30px;}
+.hottem{position: relative;overflow: hidden; } 
+.hottem img{width:100%; }
 .hottembox:after{
   content: ""; position: absolute; top:0; left:0; right:0; bottom:0;}
 .hottembox:hover:after{background: rgba(255,255,255,0.7); transition: all 1.2s;}
 .hottem:nth-child(even):hover img{transform: scale(1.2) rotate(10deg);  transition: all 1.3s; }
-.hottem:nth-child(odd):hover img{transform: scale(1.2) rotate(-10deg);  transition: all 1.3s;}
+.hottem:nth-child(odd):hover img{transform: scale(1.2) rotate(-10deg);  transition: all 1.3s; } 
 .temtext{
   position: absolute; top:50%; left:50%; font-weight: bold;
   transform: translate(-50%,-50%);
@@ -229,21 +227,32 @@ section{width:100%; position: relative; top: 80px;}
   text-align: center; line-height: 1.5;
   opacity: 0; z-index: 999999;}
 .temtext p+p{font-weight: normal;}
-.hottembox:hover .temtext{opacity: 1;  transition: all 0.8s 0.3s;}
+.hottembox:hover .temtext{opacity: 1;  transition: all 0.8s 0.3s;} 
+
+
 
     /*js */
-    .slide_product  .marrow{
+    .hot_item  .marrow{
       position: absolute; top:50%;  transform: translateY(-50%);
       background: none; border: none;
       font-size: 45px; color: rgb(197, 197, 197);}
-      .slide_product  .prevArrow{left:-40px; z-index: 9999;}
-      .slide_product  .nextArrow{right:-40px}
-      .slide_product  .slick-dots{position: absolute; bottom: -30px; width: 100%; text-align: center;;}
-      .slide_product  .slick-dots li{display: inline-block;}
-      .slide_product  .slick-dots li button{width: 15px; height: 15px; background:rgb(197, 197, 197); border: none; text-indent: -999999px; overflow: hidden; border-radius: 50%; margin: 0 5px;}
-      .slide_product  .slick-dots li.slick-active button{width: 40px; border-radius: 50px;background:rgb(202, 192, 192);}
+      .hot_item  .prevArrow{left:-30px; z-index: 9999;}
+      .hot_item  .nextArrow{right:-30px}
+      .hot_item  .slick-dots{position: absolute; bottom: -30px; width: 100%; text-align: center;;}
+      .hot_item  .slick-dots li{display: inline-block;}
+      .hot_item  .slick-dots li button{width: 12px; height: 12px; background:rgb(197, 197, 197); border: none; text-indent: -999999px; overflow: hidden; border-radius: 50%; margin: 0 5px;}
+      .hot_item  .slick-dots li.slick-active button{width: 40px; border-radius: 50px;background:rgb(202, 192, 192);  }
 
-
+      .hot_item .slick-slide{
+        opacity: 0.6; transform: scale(0.85);
+        transition: all 0.5s;
+      }
+      .hot_item .slick-slide.slick-active.slick-current{
+        opacity: 1; transform: scale(1);
+      }
+      .hot_item .slick-slide.slick-active{
+        opacity: 0.; transform: scale(0.85);
+      }
 
 
 
@@ -274,7 +283,7 @@ position: relative; top:90px; z-index: 9;}
 .tabbt a{ display: inline-block; width:150px; height: 45px; line-height: 45px;
   background: #000; color: #fff; text-align: center; font-size: 15px;
   border-radius: 25px; }
-
+.tabbt a:hover{background:rgb(37, 37, 37); transition: all 0.2s;}
 .tab_mov{
   height: 800px; width: 100%;
   background-image: url(../img/tab_p3.png); 
@@ -301,10 +310,13 @@ position: relative; top:90px; z-index: 9;}
 
     /*js */
     .tab_slide .slick-dots li{display: inline-block;}
-    .tab_slide .slick-dots li button{width: 80px; height: 50px; background:none; border: none; text-indent: 0px; overflow: hidden; border-radius:0; margin: 0 20px;
+    .tab_slide .slick-dots li button{width: 130px; height: 50px; background:none; border: none; text-indent: 0px; overflow: hidden; border-radius:0; margin: 0 20px;
     font-size: 18px; color: #fff; text-shadow:0 0 7px rgba(0,0,0,0.46) ;}
     .tab_slide .slick-dots{position: absolute; top: 115px; width: 100%; text-align: center;}
     .tab_slide .slick-dots li.slick-active button{border-bottom: 1px solid rgba(255, 255, 255, 0.801);}
+    .tab_slide .slide.slick-active {animation: fadeInRight 1s both 1.5s}
+
+
 
 
 /* .tab_product2, .tab_product ,.tab_mov{display: none;}
@@ -369,7 +381,7 @@ position: relative; top:90px; z-index: 9;}
 
 
 /* FOOTER */
-footer{
+#footer{
   background: #5a6373; 
   height: 150px;
   color: #ccc; font-size: 15px;
@@ -421,35 +433,28 @@ footer{
 
 
 
-
+.row3{max-width: 1000px; margin: 0 auto;}
 
 /* join.html */
-.joinbg{
-  width: 100%; height:350px;
-  background-image:url(../img/join.jpg) ;
-  background-repeat: no-repeat; background-size: cover;
-  /* background-position: 50% 30%;
-   */
-   background-position: 50% 65%;
-  position: relative; }
-.joinbox{font-size: 38px; color:rgb(255, 255, 255); max-width: 1000px; margin: 0 auto;}
-.joinbox h3{
-  display: inline-block; font-weight: bold; padding-right: 60px;  text-shadow: 5px 5px 3px rgba(49, 49, 49, 0.473);
-padding-top: 270px;}
-.joinbox h3:first-child:after{content: "|"; display: inline-block; position: relative; top:-8px; left: 30px; font-size: 23px;}
+#j_header{border-bottom: 1px solid rgb(206, 206, 206);}
+.j_logo h1{ height: 100px ; line-height: 100px; font-weight: bold;}
+.j_logo h1, .j_logo h2{display: inline-block;}
+.j_logo h2{padding-left:15px; font-size: 20px;}
 
-.joinpage{max-width: 1000px; margin: 0 auto;font-size: 16px;}
-.pilsu { padding: 50px 0 20px; border-bottom: 2px solid rgb(187, 186, 186);}
+
+.section{ background: rgb(236, 236, 236);  padding: 70px 0;}
+.joinpage{background: #fff; padding: 20px  50px ; border-radius: 25px; border: 1px solid rgb(206, 206, 206); } 
+.pilsu { padding: 20px 0 20px;  font-weight: bold;}
 .pilsutem:before{content:"*"; color:sandybrown; position: relative;   left:-10px; top: 3px;  font-size: 17px;}
 
 
-.atext p{padding: 70px 0 20px;}
-.join_list li{padding: 20px 0 ; border-top: 1px solid gainsboro; }
-.join_list{padding-top: 30px;}
-.jj{float:left;width:20%;;}
 .j_content{float: right; width: 80%;;}
-.jointype{border-top: 1px solid gainsboro; border-bottom:  1px solid gainsboro; 
-  padding: 15px 0;}
+.jointype{
+  border-top: 1px solid gainsboro; 
+  border-bottom:  1px solid gainsboro; }
+  .jj{float:left;width:20%;;}
+.atext p{padding: 70px 0 20px; font-weight: bold;}
+.join_list li{padding: 20px 0 ; border-top: 1px solid gainsboro; }
 
 
 
@@ -467,3 +472,23 @@ padding-top: 270px;}
   .join_bt{padding: 30px 0; text-align: center;}
   .join_bt input{height: 50px; width: 150px; margin: 0 10px; background: #fff; border: 1px solid #ccc;}
   .join_bt input[type="submit"]{background: rgb(77, 77, 77); color: #fff;}
+
+
+  #j_footer{
+    background: #5a6373; 
+    height: 150px;
+    color: #ccc; font-size: 15px;
+    padding-top: 20px;}
+  .footer{position: relative;}
+  .foot{ font-size: 15px; padding-bottom: 20px;}
+  .foot a{padding-right: 20px;}
+  .foot a:hover{text-decoration: underline;}
+  .add p, .cl p{font-size: 12px; padding-bottom: 5px;} 
+  .cl p{padding: 10px 0;}
+  .logoname{position: absolute; right: 0; top:35%; font-size: 25px; }
+
+
+
+
+
+  .login_section{height: 690px; background: rgb(236, 236, 236);}
