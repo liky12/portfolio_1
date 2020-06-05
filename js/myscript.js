@@ -25,7 +25,7 @@ $(".sdgimg").slick({
     pauseOnFocus:false,//동그라미 버븐클릭시 자동실행 멈춤여부
     cssEase:"linear",//슬라이드 가속도
     draggable:true,//마우스 드래그시 움직임 여부
-    fade:false,//넘어가는 방향(오->왼), true:제자리아웃온 효과
+    fade:true,//넘어가는 방향(오->왼), true:제자리아웃온 효과
     arrows:true,//기본값true,슬라이드 방향 버튼
     prevArrow: '<button class="prevArrow marrow"><i class="fas fa-chevron-left"></i></button>',
     nextArrow: '<button class="nextArrow marrow"><i class="fas fa-chevron-right"></i></button>',
