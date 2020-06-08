@@ -23,7 +23,7 @@
 
 /* 햄버거 버튼 생성 */
 @media screen and (max-width:1024px){
-    #header .logo{float: inherit; position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
+    #header .logo{ position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
     #header h1 a{
         display: inline-block; 
         width: 200px;
@@ -80,6 +80,7 @@
 
 
 @media screen and (max-width:799px) {
+  #header .logo{ position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%); width: 100%; text-align: center; }
   .sdgimg .sd1 img, .sdgimg .sd2 img, .sdgimg .sd3 img{
     width: 100%; height: 300px;  position: relative; }
     .sdgimg .text{
