@@ -166,12 +166,9 @@ header{position: relative;}
 section{width:100%; position: relative; top: 80px;}
 
 
-.sdgimg .sd1 img{
+.sdgimg .sd1 img, .sdgimg .sd2 img, .sdgimg .sd3 img{
   width: 100%; height: 810px;  position: relative; }
-.sdgimg .sd2 img{
-  width: 100%; height: 810px;  position: relative; }
-.sdgimg .sd3 img{
-  width: 100%; height: 810px;position: relative;}
+
 .sd3, .sd2 {display: none;}
 .sdgimg .text{
   position: absolute; 
@@ -299,20 +296,19 @@ section{width:100%; position: relative; top: 80px;}
   color: #fff; text-shadow:0 0 7px rgba(0,0,0,0.46) ;
 position: relative; top:90px; z-index: 9;}
 
-.tab_slide .tab_menu{
-  position: absolute; top:15%; left: 50%; transform: translateX(-50%);}
+/* .tab_slide .tab_menu{
+  position: absolute; top:15%; left: 50%; transform: translateX(-50%);} */
 .tab_slide .tab_menu a{
   margin: 0 15px;
   display: inline-block; height:45px; line-height:45px;
   font-size: 18px; color: #fff; text-shadow:0 0 7px rgba(0,0,0,0.46) ;}
-.tab_menu a:first-child{color:#000; border-bottom:1px solid #000}
+/* .tab_menu a:first-child{color:#000; border-bottom:1px solid #000} */
 .tab_slide p{font-size: 19px;}
 .tabbt{
   position: absolute; top:80%; left: 50%; transform: translateX(-50%);
   color: #fff; text-shadow:0 0 7px rgba(0,0,0,0.46) ; text-align: center;}
 .tabbt p{margin-bottom: 35px; font-size: 35px;}
-.tabbt a{ display: inline-block; width:150px; height: 45px; line-height: 45px;
-  background: #000; color: #fff; text-align: center; font-size: 15px;
+.tabbt a{ display: inline-block; width:150px; height: 45px; line-height: 45px;  background: #000; color: #fff; text-align: center; font-size: 15px;
   border-radius: 25px; }
 .tabbt a:hover{background:rgb(37, 37, 37); transition: all 0.2s;}
 .tab_mov{
