@@ -6,8 +6,7 @@
 .pd2txt3{display:none;}
 }
 
-@media screen and (max-width:1380px){
- }
+
 
 @media screen and (max-width:1200px){
 .mainmenu{text-align: left; float:left; width: 55%;}
@@ -133,4 +132,22 @@ border-radius: 25px; }
         background-image: url(../img/tab_p4.png);
         background-position: 50%; 
         background-size: cover; position: relative;}
+}
+@media screen and (max-width:650px) {
+
+  .pdul2{ max-width: 320px; margin: 0 auto; overflow: hidden;} 
+  .pdul2 li{  
+    float: left; width: 100%; height: 132px; overflow: hidden; 
+    margin-left: 2%; margin-bottom: 20px; color: #fff;} 
+ .pdul2 li:nth-child(odd){margin-left:2% ;}
+ .pdul2>li:nth-child(odd) .pd2tbg{display: none; }
+.pdul2>li:nth-child(even) .pd2tbg{  display: none;}   
+.pdul2>li:nth-child(odd) .pd2txt{display: none;}
+.pdul2>li:nth-child(odd) .pd2txt2{ display: none;}
+.pdul2>li:nth-child(odd) .pd2txt3{display: none;}
+.pdul2>li:nth-child(even) .pd2txt{display: none;}
+.pdul2>li:nth-child(even) .pd2txt2{ display: none;}
+.pdul2>li:nth-child(even) .pd2txt3{display: none;}
+
+ 
 }
