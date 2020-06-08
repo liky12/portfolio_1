@@ -165,32 +165,50 @@ header{position: relative;}
 /* section 시작 */
 section{width:100%; position: relative; top: 80px;}
 
-.sdgimg .sd1{
-  height:810px;
-  background-image:url(../img/back1.jpg) ;
-  background-repeat: no-repeat; background-size: cover;
-  background-position: center;
-  position: relative; }
-.sdgimg .sd2{
-  height:810px;
-  background-image:url(../img/back2.jpg) ;
-  background-repeat: no-repeat; background-size: cover;
-   background-position: center;
-  position: relative; }
-.sdgimg .sd3{
-    height:810px;
-    background-image:url(../img/back3.jpg) ;
-    background-repeat: no-repeat; background-size: cover;
-    background-position: center;
-    position: relative; }
+
+.sdgimg .sd1 img{
+  width: 100%; height: 810px;  position: relative; }
+.sdgimg .sd2 img{
+  width: 100%; height: 810px;  position: relative; }
+.sdgimg .sd3 img{
+  width: 100%; height: 810px;position: relative;}
 .sd3, .sd2 {display: none;}
 .sdgimg .text{
   position: absolute; 
-  top:50%; left: 10%; 
+  top:40%; left: 10%; 
   color: papayawhip;} 
-.text h3{font-size:50px; letter-spacing: 3px; line-height: 1.3; }
-.text p{font-size: 16px; padding-top: 43px;}
+.text h3{
+  font-size:50px; letter-spacing: 3px; 
+  line-height: 1.3;   }
 
+.pbox{height: 25px;margin-top: 43px; padding-left: 8px; font-size: 16px;overflow: hidden; }
+.hbox,.hbox2,.hbox3{height: 60px; overflow: hidden;  }
+.slide .slick-active .hbox h3{animation:fadeInUp2 1s both 0.5s;}
+.slide .slick-active .hbox2 h3{animation:fadeInUp2 1s both 0.8s;}
+.slide .slick-active .hbox3 h3{animation:fadeInUp2 1s both 1.1s;}
+.slide .slick-active .text p{animation:fadeInLeft1 1.2s both 1.7s;}
+@keyframes fadeInUp2 {
+  from {
+    position: relative; top:50px
+  }
+
+  to {
+    position: relative; top:0px
+  }
+}
+@keyframes fadeInLeft1 {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-10%, 0, 0);
+    transform: translate3d(-10%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
 
     /*js */
       .slide{position: relative;}
@@ -207,7 +225,7 @@ section{width:100%; position: relative; top: 80px;}
       .plpa{position: absolute; bottom: 18px; background: none; border: none;
         font-size: 15px; color: rgba(255, 255, 255, 0.37); right: 0%;  width: calc(50% - 30px);padding-left: 10px;
         text-align: left;}
-        .slide .slick-active {animation:  zoomm 6s;}
+        .slide .slick-active img{animation:  zoomm 6s;}
         @keyframes zoomm {
           from {
             -webkit-transform: scale3d(1, 1, 1);
@@ -215,12 +233,11 @@ section{width:100%; position: relative; top: 80px;}
           }
         
           100% {
-            -webkit-transform: scale3d(1.05, 1.05, 1.05);
-            transform: scale3d(1.05, 1.05, 1.05);
+            -webkit-transform: scale3d(1.06, 1.06, 1.06);
+            transform: scale3d(1.06, 1.06, 1.06);
           }
         }
-
-        .slide .slick-active .text{animation:  zoommOut 6s;} 
+        
 
 
 .slide_product h3{  font-size: 27px; text-align: center; font-weight: bold;  padding: 50px 0 ; border-bottom: 1px solid rgb(211, 211, 211) ; position: relative; }
@@ -308,16 +325,16 @@ position: relative; top:90px; z-index: 9;}
   background-image: url(../img/tab_p2.png); 
   background-size: cover; position: relative;}
 .p_txt{position: absolute; top:45%; left:65%; }
-.p_txt .sun{font-size: 38px; padding-left: 50px;padding-bottom: 10px;}
+/* .p_txt .sun{font-size: 38px; padding-left: 50px;padding-bottom: 10px;}
 .p_txt .di {font-size: 38px; padding-left: 30px;padding-bottom: 30px;
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);}
 .p_txt p:last-child{font-size: 55px;
   -webkit-transform: translate3d(-100%, 0, 0);
-  transform: translate3d(-100%, 0, 0);}
-.tab_slide .slick-active .sun{animation: fadeInUp 1s  both;}
+  transform: translate3d(-100%, 0, 0);} */
+/* .tab_slide .slick-active .sun{animation: fadeInUp 1s  both;}
 .tab_slide .slick-active .di{animation: fadeInUp 1s  both 0.5s; }
-.tab_slide .slick-active .p_txt p:last-child{animation: fadeInUp 1s  both 1s;}
+.tab_slide .slick-active .p_txt p:last-child{animation: fadeInUp 1s  both 1s;} */
 
 
 .tab_product2{
