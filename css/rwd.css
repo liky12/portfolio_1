@@ -40,7 +40,7 @@
 
 #header .mainmenu{display: none;
   float:none; width:100%;  
-  padding-right:0px; background: #c7c2c2; }
+  padding-right:0px; background: #c7c2c2; padding: 20px 0; }
 #header.on .mainmenu{display:block; 
   position: absolute; top:99%; left:0;}
 .depth1{width:100%; text-align: center; }
@@ -120,6 +120,14 @@
               font-size: 27px; text-align: center; font-weight: bold;
               padding-bottom: 50px; border-bottom: 1px solid rgb(211, 211, 211) ;
             padding-top: 50px;}  
+
+            .popbox.on {
+              display: none}
+
+
+            
+
+}
 
 
 @media screen and (max-width:799px) {

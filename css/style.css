@@ -213,17 +213,21 @@ header{position: relative;}
     /*js */
       .slide{position: relative;}
       .slide .marrow{position: absolute; top:50%;  transform: translateY(-50%); background: none; border: none;
-        font-size: 45px; color: rgba(255, 255, 255, 0.445);}
+        font-size: 45px; color: rgba(87, 87, 87, 0.445); transition: all 0.5s;}
+        .slide .marrow:hover{color:rgba(255, 255, 255, 0.712)}
       .slide .prevArrow{left:50px; z-index: 9999;}
       .slide .nextArrow{right:55px}
       .slide .slick-dots{position: absolute; bottom: 20px; 
         width: calc(50% + 30px);text-align: right;}
       .slide .slick-dots li{display: inline-block;}
-      .slide .slick-dots li button{width: 15px; height: 15px; background:rgba(255, 255, 255, 0.37); border: none; text-indent: -999999px; overflow: hidden; border-radius: 50%; margin: 0 5px;}
+      .slide .slick-dots li button{width: 15px; height: 15px; background:rgba(255, 255, 255, 0.37); border: none; text-indent: -999999px; overflow: hidden; border-radius: 50%; margin: 0 5px; transition: all 0.5s;}
+      .slide .slick-dots li button:hover,
+      .slide .slick-dots li.slick-active button:hover{background:rgba(255, 255, 255, 0.829) ;}
+      .plpa:hover{color:rgba(255, 255, 255, 0.829);}
       .slide .slick-dots li.slick-active button{
         width: 50px; border-radius: 50px;background:rgba(255, 255, 255, 0.658);}
       .plpa{position: absolute; bottom: 18px; background: none; border: none;
-        font-size: 15px; color: rgba(255, 255, 255, 0.37); right: 0%;  width: calc(50% - 30px);padding-left: 10px;
+        font-size: 15px; color: rgba(255, 255, 255, 0.37); right: 0%;  width: calc(50% - 30px);padding-left: 10px;transition: all 0.5s;
         text-align: left;}
         .slide .slick-active img{animation:  zoomm 6s;}
         @keyframes zoomm {
