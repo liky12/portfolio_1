@@ -1,4 +1,11 @@
 
+var winWidth;
+function init(){
+            winWidth = $(window).width()
+            if( winWidth > 1023){
+            $("#header").removeClass("on"); }
+}
+
 
 $(".depth1 > li >a").on("click" ,function(){
     if($(this).parents("#header").hasClass("on")){

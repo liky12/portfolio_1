@@ -338,7 +338,7 @@ position: relative; top:60px; z-index: 9;}
 .tabbt{
   position: absolute; top:80%; left: 50%; transform: translateX(-50%);
   color: #fff; text-shadow:0 0 7px rgba(0,0,0,0.46) ; text-align: center;}
-.tabbt p{margin-bottom: 35px; font-size: 35px; color: #fff;}
+.tabbt p{margin-bottom: 35px; font-size: 35px; color: #fff; }
 .tabbt a{ display: inline-block; width:150px; height: 45px; line-height: 45px;  background: #000; color: #fff; text-align: center; font-size: 15px;
   border-radius: 25px; }
 .tabbt a:hover{background:rgb(37, 37, 37); transition: all 0.2s;}
@@ -377,14 +377,17 @@ position: relative; top:60px; z-index: 9;}
       border-radius:0; margin: 0 20px;  font-size: 18px; color: #fff; 
       text-shadow:0px 4px 5px rgba(0, 0, 0, 0.753) ;}
     
-    .tab_slide .slick-dots li button:after{content: ""; width: 0px ; height: 1.5px;  transition: width 0.4s 0.2s; position: relative; 
+    .tab_slide .slick-dots li button:after{content: ""; width: 0px ; height: 2px; 
+      transition-duration: 0.7s;
+       transition-timing-function: cubic-bezier(0.5, 0, 0.2, 1);
+      position: relative; 
     top: 8px; left: 10px; right: 0;}
-    .tab_slide .slick-dots li.slick-active button:after{width: 130px ; height: 1.5px; background: rgb(255, 255, 255);
+    .tab_slide .slick-dots li.slick-active button:after{width: 130px ; height: 2px; background: rgb(255, 255, 255);
       display: block; border-radius: 50px; } 
       .tab_slide .slick-dots li:nth-child(2) button:after,
-      .tab_slide .slick-dots li:nth-child(3) button:after{left:37px}
+      .tab_slide .slick-dots li:nth-child(3) button:after{left:30px}
       .tab_slide .slick-dots li.slick-active:nth-of-type(2) button:after,
-      .tab_slide .slick-dots li.slick-active:nth-of-type(3) button:after{width: 75px;}
+      .tab_slide .slick-dots li.slick-active:nth-of-type(3) button:after{width: 90px;}
 
 
 /* .tab_product2, .tab_product ,.tab_mov{display: none;}
