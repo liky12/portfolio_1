@@ -177,6 +177,7 @@ header{position: relative;}
   position: absolute; 
   top:40%; left: 10%; 
   color: rgb(253, 245, 232);  text-shadow:0 0 7px rgba(0,0,0,0.46)} 
+  .sd2 .text{color:rgb(21, 24, 66);text-shadow:none}
 .text h3{
   font-size:49px; letter-spacing: 3px; 
   line-height: 1.3;   }
