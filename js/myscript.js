@@ -1,6 +1,12 @@
+
+
 $(".depth1 > li >a").on("click" ,function(){
-    $(this).next().stop().slideDown(500)
-    $(this).parent().siblings().children(".depthbox2").stop().fadeOut(0)
+    if($(this).parents("#header").hasClass("on")){
+        $(this).next().fadeOut(0)
+    } else{  
+        $(this).next().stop().slideDown(500)
+        $(this).parent().siblings().children(".depthbox2").stop().fadeOut(0)
+    }
 })
 
 $("header").on("mouseleave" , function(){
@@ -10,6 +16,20 @@ $("header").on("mouseleave" , function(){
 // $("#header .openMobgnb").on("click", function(){
 //         $(this).parents("#header").toggleClass("on")
 // })
+
+$("#header .openMOgnb").on("click", function(){
+    // $(this).parents("#header").addClass("on")
+    // toggleClass("on") 하면 열었다 닫았다 할 수 있다.
+    if(!$(this).parents("#header").hasClass("on")){
+        $(this).parents("#header").addClass("on")
+    }
+})
+$("#header .closeMOgnb").on("click", function(){
+    $(this).parents("#header").removeClass("on")
+})
+
+
+
 
 
 

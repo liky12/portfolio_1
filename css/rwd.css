@@ -22,6 +22,42 @@
 
 /* 햄버거 버튼 생성 */
 @media screen and (max-width:1024px){
+  .openMOgnb {
+    display: block; 
+    position: absolute; top:35px; left:15px; 
+    width:25px; height:16px;}
+.openMOgnb span{
+    display: block; 
+    width:25px; height: 3px; background: rgb(63, 63, 63); 
+    border-radius: 25%;
+    margin-bottom: 4px;}
+.openMOgnb span:nth-of-type(2) {width: 17px;}
+.openMOgnb span:nth-of-type(3) {margin-bottom:0;}
+
+#header .mainmenu{display: none; float:none; width:100%; padding-right:0px; background: #ffffff;}
+#header.on .mainmenu{display:block; position: absolute; top:99%; left:0;}
+.depth1{width:100%; text-align: center; }
+.depth1>li{float: left; width: 100%; font-size:17px;}
+.depthbox2{ display: none;}
+
+.depth1>li>a{
+  width:94px ;
+  height: 55px; line-height: 35px;
+  display:inline-block; 
+  text-align: center; font-weight: bold;} 
+
+#header.on .closeMOgnb{
+  display: block; 
+  position: absolute; top:42px; right:15px;
+  width:25px; height:17px; margin-right: 3px ;}
+.closeMOgnb a{display: block;}
+.closeMOgnb span{
+  display: block; width:30px; height:2px; 
+  background: rgb(83, 83, 83); border-radius: 20px; 
+  transform: rotate(45deg); position: absolute; top:0; left:0;}
+.closeMOgnb span:nth-of-type(2){transform: rotate(-45deg);}
+
+
     #header .logo{ position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
     #header h1 a{
         display: inline-block; 
@@ -60,10 +96,11 @@
           height: 500px; width: 100%;
           background-image: url(../img/tab_p2.png); 
           background-size: cover; position: relative;}
-        .p_txt{position: absolute; top:45%; left:65%;}
+          .tab_product iframe { width: 450px; height: 300px; border-radius: 25px;
+            position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
         .tab_product2{
           height: 500px; width: 100%;
-          background-image: url(../img/tab_p4.png);
+          background-image: url(../img/tab_p1.png);
           background-position: 50% 20%; 
           background-size: cover; position: relative;}
           .tab_product2 iframe{
@@ -103,10 +140,7 @@
 
 
 
-  .tab_slide .slick-dots{position: absolute; top: 40px; width: 100%; text-align: center;}
-  .tab_slide .slick-dots li button{width: 90px; height: 50px; background:none; border: none; text-indent: 0px; overflow: hidden; border-radius:0; margin: 0 5px;
-    font-size: 13px; color: #fff; text-shadow:0 0 7px rgba(0,0,0,0.46) ;}
-    .tab_slide .slick-dots li.slick-active button{border-bottom: 1px solid rgba(255, 255, 255, 0.801);}
+  
   .tabbt{
     position: absolute; top:80%; left: 50%; transform: translateX(-50%);
     color: #fff; text-shadow:0 0 7px rgba(0,0,0,0.46) ; text-align: center;}
@@ -129,7 +163,7 @@ border-radius: 25px; }
         background-size: cover; position: relative;}
       .tab_product2{
         height: 400px; width: 100%;
-        background-image: url(../img/tab_p4.png);
+        background-image: url(../img/tab_p1.png);
         background-position: 50%; 
         background-size: cover; position: relative;}
 }
