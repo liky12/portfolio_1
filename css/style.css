@@ -462,7 +462,7 @@ position: relative; top:50px; z-index: 9;}
   position: absolute; top:0; left:0; right:0; bottom:0; 
   background: rgba(155, 155, 155, 0.658) ; z-index: 9999999999999999999;}
   .popbox.on .inner{
-  position: absolute; top:2942px; left:50%; transform: translateX(-50%); 
+  position: absolute; top:2960px; left:50%; transform: translateX(-50%); 
   background: #ffffffe3; border-radius: 5px;
   text-align: center; padding: 10px;}
   .popbox.on p{
