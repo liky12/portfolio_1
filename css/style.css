@@ -325,7 +325,7 @@ header{position: relative;}
   height:60px ; line-height: 60px; */
   text-align: center; font-weight: bold; font-size: 28px;
   color: #fff; text-shadow:0 0 7px rgba(0,0,0,0.46) ;
-position: relative; top:60px; z-index: 9;}
+position: relative; top:50px; z-index: 9;}
 
 /* .tab_slide .tab_menu{
   position: absolute; top:15%; left: 50%; transform: translateX(-50%);} */
@@ -336,10 +336,10 @@ position: relative; top:60px; z-index: 9;}
 /* .tab_menu a:first-child{color:#000; border-bottom:1px solid #000} */
 .tab_slide p{font-size: 19px;}
 .tabbt{
-  position: absolute; top:80%; left: 50%; transform: translateX(-50%);
+  position: absolute; top:83%; left: 50%; transform: translateX(-50%);
   color: #fff; text-shadow:0 0 7px rgba(0,0,0,0.46) ; text-align: center;}
 .tabbt p{margin-bottom: 35px; font-size: 35px; color: #fff; }
-.tabbt a{ display: inline-block; width:150px; height: 45px; line-height: 45px;  background: #000; color: #fff; text-align: center; font-size: 15px;
+.tabbt a{ display: inline-block; width:160px; height: 45px; line-height: 45px;  background: #000; color: #fff; text-align: center; font-size: 15px;
   border-radius: 25px; }
 .tabbt a:hover{background:rgb(37, 37, 37); transition: all 0.2s;}
 .tab_mov{
