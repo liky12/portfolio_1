@@ -176,12 +176,12 @@ header{position: relative;}
 .sdgimg .text{
   position: absolute; 
   top:40%; left: 10%; 
-  color: papayawhip;} 
+  color: rgb(253, 245, 232);  text-shadow:0 0 7px rgba(0,0,0,0.46)} 
 .text h3{
-  font-size:50px; letter-spacing: 3px; 
+  font-size:49px; letter-spacing: 3px; 
   line-height: 1.3;   }
 .pbox{height: 25px;margin-top: 43px; padding-left: 8px; font-size: 16px;overflow: hidden; }
-.hbox,.hbox2,.hbox3{height: 60px; overflow: hidden;  }
+.hbox,.hbox2,.hbox3{height: 57px; overflow: hidden;  }
 
 .slide .slick-active .hbox h3{animation:fadeInUp2 1s both 0.5s;}
 .slide .slick-active .hbox2 h3{animation:fadeInUp2 1s both 0.8s;}
