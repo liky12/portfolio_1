@@ -460,20 +460,22 @@ position: relative; top:60px; z-index: 9;}
 .popbox.on {
   display: block; 
   position: absolute; top:0; left:0; right:0; bottom:0; 
-  background: rgba(100, 100, 100, 0.658) ; z-index: 9999999999999999999;}
+  background: rgba(155, 155, 155, 0.658) ; z-index: 9999999999999999999;}
   .popbox.on .inner{
   position: absolute; top:2942px; left:50%; transform: translateX(-50%); 
-  background: #ffffffe3; border-radius: 10px;
-  text-align: center; padding: 20px 10px;}
+  background: #ffffffe3; border-radius: 5px;
+  text-align: center; padding: 10px;}
   .popbox.on p{
-  font-size: 20px;padding-top: 20px;
+  font-size: 20px;padding-top: 10px;
   width: 80%; margin: 0 auto; }
   .popbox.on .close{
   background: none; border: none;
-  font-size: 30px; color:#fff; 
+  font-size: 30px; color:rgba(0, 0, 0, 0.596); 
   position: absolute; top:-23px; right: -23px; }
+  .popbox.on .close:hover,
+  .popbox.on button.arrow:hover{color:#fff ;}
   .popbox.on button.arrow{
-   font-size: 50px; color:#fff; background: none; border:  none;
+   font-size: 50px; color:rgba(0, 0, 0, 0.596);  background: none; border:  none;
    position: absolute; top:50%; transform: translateY(-50%);   }
    .popbox.on button.prev{left:-50px}
    .popbox.on button.next{right:-50px}
