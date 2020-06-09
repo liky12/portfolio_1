@@ -125,3 +125,58 @@ $(".hot_item").slick({
     }]
   });
 
+
+  var lieq;
+$(".pdul2> li").on("click",function(e){
+    e.preventDefault()
+    lieq = $(this).parent().index()
+    var href = $(this).attr("href")
+    var src = $(this).find("a").attr("data-src")
+    var text = $(this).find(".datap").text()
+    var alt = $(this).find("img").attr("alt")
+    $(".popbox").addClass("on")
+    if(winWidth<=799){
+        var litop = $(this).parent().offset().top;
+        $(".popbox .inner").css({
+            top:litop,
+            width:"80%",
+            left:"0%",
+            transform:"translate(0%)",
+            margin:"0 10%"
+        })
+    }
+    $(".popbox .inner p").text(text)
+    $(".popbox .inner div a").attr("href",href)
+    $(".popbox .inner div img").attr("src",src).attr("alt",alt).attr("width","100%")
+})
+$(".popbox  button.close").on("click",function(){
+    $(this).parents(".popbox").removeClass("on")
+})
+
+$(".popbox button.prev").on("click",function(){
+    --lieq;
+    if(lieq<0){
+        lieq=3;
+    }
+    var href = $(".pdul2 > li").eq(lieq).find("a").attr("href")
+    var src = $(".pdul2 > li ").eq(lieq).find("a").attr("data-src")
+    var alt = $(".pdul2 > li").eq(lieq).find("a").find("img").attr("alt")
+    var text = $(".pdul2 > li").eq(lieq).find("a").find(".datap").text()
+    $(".popbox .inner div a").attr("href",href)
+    $(".popbox .inner div img").attr("src",src).attr("alt",alt).attr("width","100%")
+    $(".popbox .inner p").text(text)
+})
+
+$(".popbox button.next").on("click",function(){
+    ++lieq;
+    if(lieq == $(".pdul2 > li").length){
+        lieq=0;
+    }
+    var href = $(".pdul2 > li").eq(lieq).find("a").attr("href")
+    var src = $(".pdul2> li ").eq(lieq).find("a").attr("data-src")
+    var alt = $(".pdul2 > li").eq(lieq).find("a").find("img").attr("alt")
+    var text = $(".pdul2 > li").eq(lieq).find("a").find(".datap").text()
+    $(".popbox .inner div a").attr("href",href)
+    $(".popbox .inner div img").attr("src",src).attr("alt",alt).attr("width","100%")
+    $(".popbox .inner p").text(text)
+})
